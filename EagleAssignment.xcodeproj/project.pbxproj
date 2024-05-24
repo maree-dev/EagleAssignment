@@ -10,6 +10,15 @@
 		4AA5A15B2C00B67B003F6852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA5A15A2C00B67B003F6852 /* AppDelegate.swift */; };
 		4AA5A1642C00B67C003F6852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA5A1632C00B67C003F6852 /* Assets.xcassets */; };
 		4AA5A1672C00B67C003F6852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA5A1652C00B67C003F6852 /* LaunchScreen.storyboard */; };
+		4AB56E622C00B9140012F5B5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E612C00B9140012F5B5 /* Coordinator.swift */; };
+		4AB56E652C00B9370012F5B5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E642C00B9370012F5B5 /* AppCoordinator.swift */; };
+		4AB56E682C00B98E0012F5B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E672C00B98E0012F5B5 /* User.swift */; };
+		4AB56E6E2C00BA260012F5B5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E6C2C00BA260012F5B5 /* SplashViewController.swift */; };
+		4AB56E6F2C00BA260012F5B5 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AB56E6D2C00BA260012F5B5 /* SplashViewController.xib */; };
+		4AB56E722C00BA300012F5B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E702C00BA300012F5B5 /* LoginViewController.swift */; };
+		4AB56E732C00BA300012F5B5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AB56E712C00BA300012F5B5 /* LoginViewController.xib */; };
+		4AB56E762C00BA7F0012F5B5 /* ViewController+Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E752C00BA7F0012F5B5 /* ViewController+Instance.swift */; };
+		4AB56E782C00BC880012F5B5 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E772C00BC880012F5B5 /* Placeholder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +27,15 @@
 		4AA5A1632C00B67C003F6852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AA5A1662C00B67C003F6852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AA5A1682C00B67C003F6852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AB56E612C00B9140012F5B5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4AB56E642C00B9370012F5B5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4AB56E672C00B98E0012F5B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4AB56E6C2C00BA260012F5B5 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		4AB56E6D2C00BA260012F5B5 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		4AB56E702C00BA300012F5B5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4AB56E712C00BA300012F5B5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4AB56E752C00BA7F0012F5B5 /* ViewController+Instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Instance.swift"; sourceTree = "<group>"; };
+		4AB56E772C00BC880012F5B5 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +68,9 @@
 		4AA5A1592C00B67B003F6852 /* EagleAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				4AB56E632C00B9250012F5B5 /* Flows */,
+				4AB56E602C00B9050012F5B5 /* Utils */,
+				4AB56E662C00B9790012F5B5 /* Networking */,
 				4AA5A16E2C00B69F003F6852 /* Resources */,
 				4AA5A15A2C00B67B003F6852 /* AppDelegate.swift */,
 				4AA5A1682C00B67C003F6852 /* Info.plist */,
@@ -64,6 +85,68 @@
 				4AA5A1652C00B67C003F6852 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4AB56E602C00B9050012F5B5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4AB56E742C00BA6A0012F5B5 /* ViewController */,
+				4AB56E612C00B9140012F5B5 /* Coordinator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4AB56E632C00B9250012F5B5 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				4AB56E642C00B9370012F5B5 /* AppCoordinator.swift */,
+				4AB56E692C00B9E50012F5B5 /* Splash */,
+				4AB56E6A2C00B9F00012F5B5 /* Login */,
+				4AB56E6B2C00B9F90012F5B5 /* Dashboard */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		4AB56E662C00B9790012F5B5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4AB56E672C00B98E0012F5B5 /* User.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4AB56E692C00B9E50012F5B5 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				4AB56E6C2C00BA260012F5B5 /* SplashViewController.swift */,
+				4AB56E6D2C00BA260012F5B5 /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		4AB56E6A2C00B9F00012F5B5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4AB56E702C00BA300012F5B5 /* LoginViewController.swift */,
+				4AB56E712C00BA300012F5B5 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4AB56E6B2C00B9F90012F5B5 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				4AB56E772C00BC880012F5B5 /* Placeholder.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4AB56E742C00BA6A0012F5B5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4AB56E752C00BA7F0012F5B5 /* ViewController+Instance.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +207,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB56E732C00BA300012F5B5 /* LoginViewController.xib in Resources */,
 				4AA5A1672C00B67C003F6852 /* LaunchScreen.storyboard in Resources */,
+				4AB56E6F2C00BA260012F5B5 /* SplashViewController.xib in Resources */,
 				4AA5A1642C00B67C003F6852 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +221,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB56E722C00BA300012F5B5 /* LoginViewController.swift in Sources */,
+				4AB56E682C00B98E0012F5B5 /* User.swift in Sources */,
+				4AB56E652C00B9370012F5B5 /* AppCoordinator.swift in Sources */,
+				4AB56E622C00B9140012F5B5 /* Coordinator.swift in Sources */,
+				4AB56E762C00BA7F0012F5B5 /* ViewController+Instance.swift in Sources */,
 				4AA5A15B2C00B67B003F6852 /* AppDelegate.swift in Sources */,
+				4AB56E6E2C00BA260012F5B5 /* SplashViewController.swift in Sources */,
+				4AB56E782C00BC880012F5B5 /* Placeholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
