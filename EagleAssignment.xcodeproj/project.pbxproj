@@ -32,6 +32,9 @@
 		4AB56E9C2C01011E0012F5B5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E9B2C01011E0012F5B5 /* APIError.swift */; };
 		4AB56E9D2C01011E0012F5B5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E9B2C01011E0012F5B5 /* APIError.swift */; };
 		4AB56E9F2C0102A10012F5B5 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E9E2C0102A10012F5B5 /* TestConstants.swift */; };
+		4AB56EA32C0104AB0012F5B5 /* SplashBehaviourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56EA22C0104AB0012F5B5 /* SplashBehaviourTests.swift */; };
+		4AB56EA52C010BF50012F5B5 /* SplashBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56EA42C010BF50012F5B5 /* SplashBehaviour.swift */; };
+		4AB56EA62C010C050012F5B5 /* SplashBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56EA42C010BF50012F5B5 /* SplashBehaviour.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,8 @@
 		4AB56E962C00EEDE0012F5B5 /* LoginResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResolver.swift; sourceTree = "<group>"; };
 		4AB56E9B2C01011E0012F5B5 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		4AB56E9E2C0102A10012F5B5 /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		4AB56EA22C0104AB0012F5B5 /* SplashBehaviourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashBehaviourTests.swift; sourceTree = "<group>"; };
+		4AB56EA42C010BF50012F5B5 /* SplashBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashBehaviour.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +165,7 @@
 		4AB56E692C00B9E50012F5B5 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				4AB56EA42C010BF50012F5B5 /* SplashBehaviour.swift */,
 				4AB56E6C2C00BA260012F5B5 /* SplashViewController.swift */,
 				4AB56E6D2C00BA260012F5B5 /* SplashViewController.xib */,
 			);
@@ -206,6 +212,7 @@
 		4AB56E862C00BE550012F5B5 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				4AB56EA22C0104AB0012F5B5 /* SplashBehaviourTests.swift */,
 				4AB56E892C00BF000012F5B5 /* LoginBehaviourTests.swift */,
 			);
 			path = Flows;
@@ -338,6 +345,7 @@
 				4AB56E622C00B9140012F5B5 /* Coordinator.swift in Sources */,
 				4AB56E902C00C0800012F5B5 /* LoginState.swift in Sources */,
 				4AB56E762C00BA7F0012F5B5 /* ViewController+Instance.swift in Sources */,
+				4AB56EA52C010BF50012F5B5 /* SplashBehaviour.swift in Sources */,
 				4AA5A15B2C00B67B003F6852 /* AppDelegate.swift in Sources */,
 				4AB56E6E2C00BA260012F5B5 /* SplashViewController.swift in Sources */,
 				4AB56E782C00BC880012F5B5 /* Placeholder.swift in Sources */,
@@ -350,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB56EA62C010C050012F5B5 /* SplashBehaviour.swift in Sources */,
 				4AB56E8A2C00BF000012F5B5 /* LoginBehaviourTests.swift in Sources */,
 				4AB56E922C00C0B20012F5B5 /* LoginBehaviour.swift in Sources */,
 				4AB56E912C00C0B00012F5B5 /* LoginState.swift in Sources */,
@@ -357,6 +366,7 @@
 				4AB56E992C00FF4D0012F5B5 /* User.swift in Sources */,
 				4AB56E982C00EEFA0012F5B5 /* LoginResolver.swift in Sources */,
 				4AB56E9A2C00FFA10012F5B5 /* Closures.swift in Sources */,
+				4AB56EA32C0104AB0012F5B5 /* SplashBehaviourTests.swift in Sources */,
 				4AB56E9D2C01011E0012F5B5 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
