@@ -19,7 +19,30 @@
 		4AB56E732C00BA300012F5B5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AB56E712C00BA300012F5B5 /* LoginViewController.xib */; };
 		4AB56E762C00BA7F0012F5B5 /* ViewController+Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E752C00BA7F0012F5B5 /* ViewController+Instance.swift */; };
 		4AB56E782C00BC880012F5B5 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E772C00BC880012F5B5 /* Placeholder.swift */; };
+		4AB56E8A2C00BF000012F5B5 /* LoginBehaviourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E892C00BF000012F5B5 /* LoginBehaviourTests.swift */; };
+		4AB56E8E2C00C0710012F5B5 /* LoginBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E8D2C00C0710012F5B5 /* LoginBehaviour.swift */; };
+		4AB56E902C00C0800012F5B5 /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E8F2C00C0800012F5B5 /* LoginState.swift */; };
+		4AB56E912C00C0B00012F5B5 /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E8F2C00C0800012F5B5 /* LoginState.swift */; };
+		4AB56E922C00C0B20012F5B5 /* LoginBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E8D2C00C0710012F5B5 /* LoginBehaviour.swift */; };
+		4AB56E952C00EE2D0012F5B5 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E942C00EE2D0012F5B5 /* Closures.swift */; };
+		4AB56E972C00EEDE0012F5B5 /* LoginResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E962C00EEDE0012F5B5 /* LoginResolver.swift */; };
+		4AB56E982C00EEFA0012F5B5 /* LoginResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E962C00EEDE0012F5B5 /* LoginResolver.swift */; };
+		4AB56E992C00FF4D0012F5B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E672C00B98E0012F5B5 /* User.swift */; };
+		4AB56E9A2C00FFA10012F5B5 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E942C00EE2D0012F5B5 /* Closures.swift */; };
+		4AB56E9C2C01011E0012F5B5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E9B2C01011E0012F5B5 /* APIError.swift */; };
+		4AB56E9D2C01011E0012F5B5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E9B2C01011E0012F5B5 /* APIError.swift */; };
+		4AB56E9F2C0102A10012F5B5 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E9E2C0102A10012F5B5 /* TestConstants.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AB56E812C00BE500012F5B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AA5A14F2C00B67B003F6852 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AA5A1562C00B67B003F6852;
+			remoteInfo = EagleAssignment;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4AA5A1572C00B67B003F6852 /* EagleAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EagleAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,10 +59,25 @@
 		4AB56E712C00BA300012F5B5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		4AB56E752C00BA7F0012F5B5 /* ViewController+Instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Instance.swift"; sourceTree = "<group>"; };
 		4AB56E772C00BC880012F5B5 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		4AB56E7D2C00BE500012F5B5 /* EagleAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EagleAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AB56E892C00BF000012F5B5 /* LoginBehaviourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBehaviourTests.swift; sourceTree = "<group>"; };
+		4AB56E8D2C00C0710012F5B5 /* LoginBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBehaviour.swift; sourceTree = "<group>"; };
+		4AB56E8F2C00C0800012F5B5 /* LoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
+		4AB56E942C00EE2D0012F5B5 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		4AB56E962C00EEDE0012F5B5 /* LoginResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResolver.swift; sourceTree = "<group>"; };
+		4AB56E9B2C01011E0012F5B5 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		4AB56E9E2C0102A10012F5B5 /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4AA5A1542C00B67B003F6852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AB56E7A2C00BE500012F5B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				4AA5A1592C00B67B003F6852 /* EagleAssignment */,
+				4AB56E7E2C00BE500012F5B5 /* EagleAssignmentTests */,
 				4AA5A1582C00B67B003F6852 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				4AA5A1572C00B67B003F6852 /* EagleAssignment.app */,
+				4AB56E7D2C00BE500012F5B5 /* EagleAssignmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				4AB56E742C00BA6A0012F5B5 /* ViewController */,
+				4AB56E942C00EE2D0012F5B5 /* Closures.swift */,
 				4AB56E612C00B9140012F5B5 /* Coordinator.swift */,
 			);
 			path = Utils;
@@ -110,7 +151,8 @@
 		4AB56E662C00B9790012F5B5 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				4AB56E672C00B98E0012F5B5 /* User.swift */,
+				4AB56EA12C0103E30012F5B5 /* APIModels */,
+				4AB56EA02C0103DA0012F5B5 /* NetworkModels */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -127,6 +169,9 @@
 		4AB56E6A2C00B9F00012F5B5 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				4AB56E962C00EEDE0012F5B5 /* LoginResolver.swift */,
+				4AB56E8D2C00C0710012F5B5 /* LoginBehaviour.swift */,
+				4AB56E8F2C00C0800012F5B5 /* LoginState.swift */,
 				4AB56E702C00BA300012F5B5 /* LoginViewController.swift */,
 				4AB56E712C00BA300012F5B5 /* LoginViewController.xib */,
 			);
@@ -149,6 +194,39 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		4AB56E7E2C00BE500012F5B5 /* EagleAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AB56E862C00BE550012F5B5 /* Flows */,
+				4AB56E9E2C0102A10012F5B5 /* TestConstants.swift */,
+			);
+			path = EagleAssignmentTests;
+			sourceTree = "<group>";
+		};
+		4AB56E862C00BE550012F5B5 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				4AB56E892C00BF000012F5B5 /* LoginBehaviourTests.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		4AB56EA02C0103DA0012F5B5 /* NetworkModels */ = {
+			isa = PBXGroup;
+			children = (
+				4AB56E9B2C01011E0012F5B5 /* APIError.swift */,
+			);
+			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		4AB56EA12C0103E30012F5B5 /* APIModels */ = {
+			isa = PBXGroup;
+			children = (
+				4AB56E672C00B98E0012F5B5 /* User.swift */,
+			);
+			path = APIModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +247,24 @@
 			productReference = 4AA5A1572C00B67B003F6852 /* EagleAssignment.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4AB56E7C2C00BE500012F5B5 /* EagleAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AB56E852C00BE500012F5B5 /* Build configuration list for PBXNativeTarget "EagleAssignmentTests" */;
+			buildPhases = (
+				4AB56E792C00BE500012F5B5 /* Sources */,
+				4AB56E7A2C00BE500012F5B5 /* Frameworks */,
+				4AB56E7B2C00BE500012F5B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AB56E822C00BE500012F5B5 /* PBXTargetDependency */,
+			);
+			name = EagleAssignmentTests;
+			productName = EagleAssignmentTests;
+			productReference = 4AB56E7D2C00BE500012F5B5 /* EagleAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +277,11 @@
 				TargetAttributes = {
 					4AA5A1562C00B67B003F6852 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					4AB56E7C2C00BE500012F5B5 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+						TestTargetID = 4AA5A1562C00B67B003F6852;
 					};
 				};
 			};
@@ -198,6 +299,7 @@
 			projectRoot = "";
 			targets = (
 				4AA5A1562C00B67B003F6852 /* EagleAssignment */,
+				4AB56E7C2C00BE500012F5B5 /* EagleAssignmentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +316,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4AB56E7B2C00BE500012F5B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -222,17 +331,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB56E722C00BA300012F5B5 /* LoginViewController.swift in Sources */,
+				4AB56E972C00EEDE0012F5B5 /* LoginResolver.swift in Sources */,
+				4AB56E8E2C00C0710012F5B5 /* LoginBehaviour.swift in Sources */,
 				4AB56E682C00B98E0012F5B5 /* User.swift in Sources */,
 				4AB56E652C00B9370012F5B5 /* AppCoordinator.swift in Sources */,
 				4AB56E622C00B9140012F5B5 /* Coordinator.swift in Sources */,
+				4AB56E902C00C0800012F5B5 /* LoginState.swift in Sources */,
 				4AB56E762C00BA7F0012F5B5 /* ViewController+Instance.swift in Sources */,
 				4AA5A15B2C00B67B003F6852 /* AppDelegate.swift in Sources */,
 				4AB56E6E2C00BA260012F5B5 /* SplashViewController.swift in Sources */,
 				4AB56E782C00BC880012F5B5 /* Placeholder.swift in Sources */,
+				4AB56E952C00EE2D0012F5B5 /* Closures.swift in Sources */,
+				4AB56E9C2C01011E0012F5B5 /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AB56E792C00BE500012F5B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AB56E8A2C00BF000012F5B5 /* LoginBehaviourTests.swift in Sources */,
+				4AB56E922C00C0B20012F5B5 /* LoginBehaviour.swift in Sources */,
+				4AB56E912C00C0B00012F5B5 /* LoginState.swift in Sources */,
+				4AB56E9F2C0102A10012F5B5 /* TestConstants.swift in Sources */,
+				4AB56E992C00FF4D0012F5B5 /* User.swift in Sources */,
+				4AB56E982C00EEFA0012F5B5 /* LoginResolver.swift in Sources */,
+				4AB56E9A2C00FFA10012F5B5 /* Closures.swift in Sources */,
+				4AB56E9D2C01011E0012F5B5 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AB56E822C00BE500012F5B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AA5A1562C00B67B003F6852 /* EagleAssignment */;
+			targetProxy = 4AB56E812C00BE500012F5B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4AA5A1652C00B67C003F6852 /* LaunchScreen.storyboard */ = {
@@ -429,6 +566,47 @@
 			};
 			name = Release;
 		};
+		4AB56E832C00BE500012F5B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RCJBKN2QXT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markobozilovic.EagleAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EagleAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EagleAssignment";
+			};
+			name = Debug;
+		};
+		4AB56E842C00BE500012F5B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RCJBKN2QXT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markobozilovic.EagleAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EagleAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EagleAssignment";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -446,6 +624,15 @@
 			buildConfigurations = (
 				4AA5A16C2C00B67C003F6852 /* Debug */,
 				4AA5A16D2C00B67C003F6852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AB56E852C00BE500012F5B5 /* Build configuration list for PBXNativeTarget "EagleAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AB56E832C00BE500012F5B5 /* Debug */,
+				4AB56E842C00BE500012F5B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
