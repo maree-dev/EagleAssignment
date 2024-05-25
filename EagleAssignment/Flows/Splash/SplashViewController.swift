@@ -13,7 +13,7 @@ final class SplashViewController: UIViewController {
   var onError: VoidClosure?
   
   // MARK: - Properties
-  private let behaviour = SplashConcreteBehaviour(resolver: LoginConcreteResolver())
+  private let behaviour = SplashConcreteBehaviour(resolver: AuthenticationResolver())
   
   // MARK: - View LifeCycle
   override func viewDidLoad() {

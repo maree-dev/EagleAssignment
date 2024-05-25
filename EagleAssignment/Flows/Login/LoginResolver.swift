@@ -8,11 +8,11 @@
 import Foundation
 
 protocol LoginResolver {
-  func resolve(completion: DoubleParameterClosure<User?, APIError?>)
+  func resolve(parameters: AuthParameters?, completion: @escaping DoubleParameterClosure<User?, APIError?>)
 }
 
-final class LoginConcreteResolver: LoginResolver {
-  func resolve(completion: DoubleParameterClosure<User?, APIError?>) {
+final class AuthenticationResolver: LoginResolver {
+  func resolve(parameters: AuthParameters?, completion: @escaping DoubleParameterClosure<User?, APIError?>) {
     completion(nil, nil)
   }
 }
