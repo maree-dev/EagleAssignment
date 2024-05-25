@@ -13,6 +13,11 @@
 		4A8B83B32C01F83700F417F9 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83B22C01F83700F417F9 /* APIResponse.swift */; };
 		4A8B83B52C01F88C00F417F9 /* EmptResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83B42C01F88C00F417F9 /* EmptResponse.swift */; };
 		4A8B83B72C01F8E300F417F9 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83B62C01F8E300F417F9 /* AccessToken.swift */; };
+		4A8B83B92C01FC1D00F417F9 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83B82C01FC1D00F417F9 /* NetworkRequest.swift */; };
+		4A8B83BB2C01FD7F00F417F9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83BA2C01FD7F00F417F9 /* NetworkManager.swift */; };
+		4A8B83BE2C01FE7400F417F9 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83BD2C01FE7400F417F9 /* UserService.swift */; };
+		4A8B83C22C023C9A00F417F9 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83C12C023C9A00F417F9 /* AuthenticationService.swift */; };
+		4A8B83C42C023EDC00F417F9 /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83C32C023EDC00F417F9 /* Days.swift */; };
 		4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9632C01E25800104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */; };
@@ -75,6 +80,11 @@
 		4A8B83B22C01F83700F417F9 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		4A8B83B42C01F88C00F417F9 /* EmptResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptResponse.swift; sourceTree = "<group>"; };
 		4A8B83B62C01F8E300F417F9 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		4A8B83B82C01FC1D00F417F9 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		4A8B83BA2C01FD7F00F417F9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4A8B83BD2C01FE7400F417F9 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		4A8B83C12C023C9A00F417F9 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		4A8B83C32C023EDC00F417F9 /* Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
 		4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysBehaviour.swift; sourceTree = "<group>"; };
 		4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysState.swift; sourceTree = "<group>"; };
 		4AA0D9662C01E28D00104B29 /* UsedDaysResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysResolver.swift; sourceTree = "<group>"; };
@@ -134,6 +144,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A8B83BC2C01FE5200F417F9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4A8B83C12C023C9A00F417F9 /* AuthenticationService.swift */,
+				4A8B83BD2C01FE7400F417F9 /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4AA0D9602C01E24700104B29 /* UsedDays */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,8 +239,11 @@
 		4AB56E662C00B9790012F5B5 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				4A8B83BC2C01FE5200F417F9 /* Services */,
 				4AB56EA12C0103E30012F5B5 /* APIModels */,
 				4AB56EA02C0103DA0012F5B5 /* NetworkModels */,
+				4A8B83BA2C01FD7F00F417F9 /* NetworkManager.swift */,
+				4A8B83B82C01FC1D00F417F9 /* NetworkRequest.swift */,
 				4A8B83AE2C01F28200F417F9 /* Paths.swift */,
 				4A8B83B02C01F80900F417F9 /* Parser.swift */,
 			);
@@ -303,6 +325,7 @@
 			children = (
 				4A8B83B62C01F8E300F417F9 /* AccessToken.swift */,
 				4AB56E672C00B98E0012F5B5 /* User.swift */,
+				4A8B83C32C023EDC00F417F9 /* Days.swift */,
 			);
 			path = APIModels;
 			sourceTree = "<group>";
@@ -497,18 +520,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8B83BE2C01FE7400F417F9 /* UserService.swift in Sources */,
+				4A8B83BB2C01FD7F00F417F9 /* NetworkManager.swift in Sources */,
+				4A8B83B92C01FC1D00F417F9 /* NetworkRequest.swift in Sources */,
 				4A8B83AF2C01F28200F417F9 /* Paths.swift in Sources */,
 				4AB56E722C00BA300012F5B5 /* LoginViewController.swift in Sources */,
 				4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */,
 				4AA0D96E2C01E44100104B29 /* OrganizationState.swift in Sources */,
 				4AB56E972C00EEDE0012F5B5 /* LoginResolver.swift in Sources */,
 				4AB56E8E2C00C0710012F5B5 /* LoginBehaviour.swift in Sources */,
+				4A8B83C22C023C9A00F417F9 /* AuthenticationService.swift in Sources */,
 				4AB56E682C00B98E0012F5B5 /* User.swift in Sources */,
 				4A8B83B32C01F83700F417F9 /* APIResponse.swift in Sources */,
 				4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */,
 				4AB56E652C00B9370012F5B5 /* AppCoordinator.swift in Sources */,
 				4AB56E622C00B9140012F5B5 /* Coordinator.swift in Sources */,
 				4AA0D9712C01E45F00104B29 /* OrganizationBehaviour.swift in Sources */,
+				4A8B83C42C023EDC00F417F9 /* Days.swift in Sources */,
 				4AB56E902C00C0800012F5B5 /* LoginState.swift in Sources */,
 				4A8B83B12C01F80900F417F9 /* Parser.swift in Sources */,
 				4A8B83B72C01F8E300F417F9 /* AccessToken.swift in Sources */,
