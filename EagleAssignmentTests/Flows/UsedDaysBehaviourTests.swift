@@ -47,15 +47,16 @@ final class UsedDaysBehaviourTests: XCTestCase {
   
   func testLoadSuccess() {
     let expectation = XCTestExpectation(description: "Should return items")
-    let items = ["item1", "item2", "item3"]
+    let items = [Days()]
     behaviour = UsedDaysConcreteBehaviour(resolver: FakeUsedDaysResolver(items: items))
     behaviour.setup(state)
     
     behaviour.load()
     
+    XCTAssertTrue(state.isLoading)
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+TestConstants.AsyncAfter) {
       XCTAssertFalse(self.state.isLoading)
-      XCTAssertEqual(self.state.models.count, items.count)
+      XCTAssertFalse(self.state.models.isEmpty)
       expectation.fulfill()
     }
     
@@ -64,15 +65,15 @@ final class UsedDaysBehaviourTests: XCTestCase {
 }
 
 final class FakeUsedDaysResolver: UsedDaysResolver {
-  let items: [String]?
+  let items: [Days]?
   let error: APIError?
   
-  init(items: [String]? = nil, error: APIError? = nil) {
+  init(items: [Days]? = nil, error: APIError? = nil) {
     self.items = items
     self.error = error
   }
   
-  func resolver(completion: ([String]?, APIError?) -> Void) {
+  func resolve(completion: @escaping DoubleParameterClosure<[Days]?, APIError?>) {
     completion(items, error)
   }
 }
@@ -80,7 +81,7 @@ final class FakeUsedDaysResolver: UsedDaysResolver {
 final class FakeUsedDaysCounterResolver: UsedDaysResolver {
   var callCount = 0
   
-  func resolver(completion: ([String]?, APIError?) -> Void) {
+  func resolve(completion: @escaping DoubleParameterClosure<[Days]?, APIError?>) {
     callCount += 1
     completion(nil, nil)
   }
