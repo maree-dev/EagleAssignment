@@ -27,13 +27,17 @@ final class AppConcreteCoordinator {
 extension AppConcreteCoordinator: AppCoordinator {
   func start() {
     guard let controller: SplashViewController = .instance() else {return}
+    controller.onFinish = {[weak self] in self?.dashboard($0)}
+    controller.onError = {[weak self] in self?.authenticate()}
+    
     navigation.viewControllers = [controller]
   }
   
   func dismiss() {}
   
   func authenticate() {
-    // Login
+    guard let controller: LoginViewController = .instance() else {return}
+    navigation.viewControllers = [controller]
   }
   
   func dashboard(_ user: User) {

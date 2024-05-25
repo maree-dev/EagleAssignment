@@ -8,22 +8,23 @@
 import UIKit
 
 final class SplashViewController: UIViewController {
+  // MARK: - Flows
+  var onFinish: SingleParameterClosure<User>?
+  var onError: VoidClosure?
   
+  // MARK: - Properties
+  private let behaviour = SplashConcreteBehaviour(resolver: LoginConcreteResolver())
+  
+  // MARK: - View LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Do any additional setup after loading the view.
+    bindActions()
+    behaviour.login()
   }
   
-  
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destination.
-   // Pass the selected object to the new view controller.
-   }
-   */
-  
+  // MARK: - Private Methods
+  private func bindActions() {
+    behaviour.onLogin = {[weak self] in self?.onFinish?($0)}
+    behaviour.onError = {[weak self] in self?.onError?()}
+  }
 }
