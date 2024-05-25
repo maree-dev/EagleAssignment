@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A8B83AF2C01F28200F417F9 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83AE2C01F28200F417F9 /* Paths.swift */; };
+		4A8B83B12C01F80900F417F9 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83B02C01F80900F417F9 /* Parser.swift */; };
+		4A8B83B32C01F83700F417F9 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83B22C01F83700F417F9 /* APIResponse.swift */; };
+		4A8B83B52C01F88C00F417F9 /* EmptResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83B42C01F88C00F417F9 /* EmptResponse.swift */; };
+		4A8B83B72C01F8E300F417F9 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83B62C01F8E300F417F9 /* AccessToken.swift */; };
 		4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9632C01E25800104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */; };
@@ -62,6 +67,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A8B83AE2C01F28200F417F9 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		4A8B83B02C01F80900F417F9 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		4A8B83B22C01F83700F417F9 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		4A8B83B42C01F88C00F417F9 /* EmptResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptResponse.swift; sourceTree = "<group>"; };
+		4A8B83B62C01F8E300F417F9 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
 		4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysBehaviour.swift; sourceTree = "<group>"; };
 		4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysState.swift; sourceTree = "<group>"; };
 		4AA0D9662C01E28D00104B29 /* UsedDaysResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysResolver.swift; sourceTree = "<group>"; };
@@ -200,6 +210,8 @@
 			children = (
 				4AB56EA12C0103E30012F5B5 /* APIModels */,
 				4AB56EA02C0103DA0012F5B5 /* NetworkModels */,
+				4A8B83AE2C01F28200F417F9 /* Paths.swift */,
+				4A8B83B02C01F80900F417F9 /* Parser.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -218,8 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				4AB56E962C00EEDE0012F5B5 /* LoginResolver.swift */,
-				4AB56E8D2C00C0710012F5B5 /* LoginBehaviour.swift */,
 				4AB56E8F2C00C0800012F5B5 /* LoginState.swift */,
+				4AB56E8D2C00C0710012F5B5 /* LoginBehaviour.swift */,
 				4AB56E702C00BA300012F5B5 /* LoginViewController.swift */,
 				4AB56E712C00BA300012F5B5 /* LoginViewController.xib */,
 			);
@@ -268,6 +280,8 @@
 			isa = PBXGroup;
 			children = (
 				4AB56E9B2C01011E0012F5B5 /* APIError.swift */,
+				4A8B83B22C01F83700F417F9 /* APIResponse.swift */,
+				4A8B83B42C01F88C00F417F9 /* EmptResponse.swift */,
 			);
 			path = NetworkModels;
 			sourceTree = "<group>";
@@ -275,6 +289,7 @@
 		4AB56EA12C0103E30012F5B5 /* APIModels */ = {
 			isa = PBXGroup;
 			children = (
+				4A8B83B62C01F8E300F417F9 /* AccessToken.swift */,
 				4AB56E672C00B98E0012F5B5 /* User.swift */,
 			);
 			path = APIModels;
@@ -383,21 +398,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8B83AF2C01F28200F417F9 /* Paths.swift in Sources */,
 				4AB56E722C00BA300012F5B5 /* LoginViewController.swift in Sources */,
 				4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */,
 				4AA0D96E2C01E44100104B29 /* OrganizationState.swift in Sources */,
 				4AB56E972C00EEDE0012F5B5 /* LoginResolver.swift in Sources */,
 				4AB56E8E2C00C0710012F5B5 /* LoginBehaviour.swift in Sources */,
 				4AB56E682C00B98E0012F5B5 /* User.swift in Sources */,
+				4A8B83B32C01F83700F417F9 /* APIResponse.swift in Sources */,
 				4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */,
 				4AB56E652C00B9370012F5B5 /* AppCoordinator.swift in Sources */,
 				4AB56E622C00B9140012F5B5 /* Coordinator.swift in Sources */,
 				4AA0D9712C01E45F00104B29 /* OrganizationBehaviour.swift in Sources */,
 				4AB56E902C00C0800012F5B5 /* LoginState.swift in Sources */,
+				4A8B83B12C01F80900F417F9 /* Parser.swift in Sources */,
+				4A8B83B72C01F8E300F417F9 /* AccessToken.swift in Sources */,
 				4AB56E762C00BA7F0012F5B5 /* ViewController+Instance.swift in Sources */,
 				4AB56EA52C010BF50012F5B5 /* SplashBehaviour.swift in Sources */,
 				4AA5A15B2C00B67B003F6852 /* AppDelegate.swift in Sources */,
 				4AB56E6E2C00BA260012F5B5 /* SplashViewController.swift in Sources */,
+				4A8B83B52C01F88C00F417F9 /* EmptResponse.swift in Sources */,
 				4AB56E782C00BC880012F5B5 /* Placeholder.swift in Sources */,
 				4AA0D9742C01E47E00104B29 /* OrganizationResolver.swift in Sources */,
 				4AB56E952C00EE2D0012F5B5 /* Closures.swift in Sources */,
