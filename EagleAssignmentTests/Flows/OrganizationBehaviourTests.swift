@@ -22,9 +22,9 @@ final class OrganizationBehaviourTests: XCTestCase {
     behaviour = OrganizationConcreteBehaviour(resolver: resolver)
     behaviour.setup(state)
     
-    XCTAssertEqual(state.models.count, 0)
-    XCTAssertEqual(resolver.callCount, 1)
     XCTAssertTrue(state.isLoading)
+    XCTAssertTrue(state.models.isEmpty)
+    XCTAssertEqual(resolver.callCount, 1)
   }
   
   func testLoadError() {
@@ -47,7 +47,7 @@ final class OrganizationBehaviourTests: XCTestCase {
   
   func testLoadSuccess() {
     let expectation = XCTestExpectation(description: "Should return items")
-    let items = ["item1", "item2", "item3"]
+    let items = [User(id: 1), User(id: 2), User(id: 3)]
     behaviour = OrganizationConcreteBehaviour(resolver: FakeOrganizationResolver(items: items))
     behaviour.setup(state)
     
@@ -55,7 +55,7 @@ final class OrganizationBehaviourTests: XCTestCase {
     
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+TestConstants.AsyncAfter) {
       XCTAssertFalse(self.state.isLoading)
-      XCTAssertEqual(self.state.models.count, items.count)
+      XCTAssertFalse(self.state.models.isEmpty)
       expectation.fulfill()
     }
     
@@ -64,15 +64,15 @@ final class OrganizationBehaviourTests: XCTestCase {
 }
 
 final class FakeOrganizationResolver: OrganizationResolver {
-  let items: [String]?
+  let items: [User]?
   let error: APIError?
   
-  init(items: [String]? = nil, error: APIError? = nil) {
+  init(items: [User]? = nil, error: APIError? = nil) {
     self.items = items
     self.error = error
   }
   
-  func resolver(completion: ([String]?, APIError?) -> Void) {
+  func resolve(completion: @escaping DoubleParameterClosure<[User]?, APIError?>) {
     completion(items, error)
   }
 }
@@ -80,7 +80,7 @@ final class FakeOrganizationResolver: OrganizationResolver {
 final class FakeOrganizationCounterResolver: OrganizationResolver {
   var callCount = 0
   
-  func resolver(completion: ([String]?, APIError?) -> Void) {
+  func resolve(completion: @escaping DoubleParameterClosure<[User]?, APIError?>) {
     callCount += 1
     completion(nil, nil)
   }

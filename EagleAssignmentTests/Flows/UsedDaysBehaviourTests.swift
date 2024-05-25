@@ -22,9 +22,9 @@ final class UsedDaysBehaviourTests: XCTestCase {
     behaviour = UsedDaysConcreteBehaviour(resolver: resolver)
     behaviour.setup(state)
     
-    XCTAssertEqual(state.models.count, 0)
-    XCTAssertEqual(resolver.callCount, 1)
     XCTAssertTrue(state.isLoading)
+    XCTAssertTrue(state.models.isEmpty)
+    XCTAssertEqual(resolver.callCount, 1)
   }
   
   func testLoadError() {

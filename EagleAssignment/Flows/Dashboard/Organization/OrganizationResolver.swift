@@ -8,5 +8,11 @@
 import Foundation
 
 protocol OrganizationResolver {
-  func resolver(completion: DoubleParameterClosure<[String]?, APIError?>)
+  func resolve(completion: @escaping DoubleParameterClosure<[User]?, APIError?>)
+}
+
+final class OrganizationConcreteResolver: OrganizationResolver {
+  func resolve(completion: @escaping DoubleParameterClosure<[User]?, APIError?>) {
+    completion(nil, nil)
+  }
 }
