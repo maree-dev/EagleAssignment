@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
+		4AA0D9632C01E25800104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
+		4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */; };
+		4AA0D9672C01E28D00104B29 /* UsedDaysResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9662C01E28D00104B29 /* UsedDaysResolver.swift */; };
+		4AA0D9682C01E2A000104B29 /* UsedDaysResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9662C01E28D00104B29 /* UsedDaysResolver.swift */; };
+		4AA0D9692C01E2A600104B29 /* UsedDaysState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */; };
 		4AA5A15B2C00B67B003F6852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA5A15A2C00B67B003F6852 /* AppDelegate.swift */; };
 		4AA5A1642C00B67C003F6852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA5A1632C00B67C003F6852 /* Assets.xcassets */; };
 		4AA5A1672C00B67C003F6852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA5A1652C00B67C003F6852 /* LaunchScreen.storyboard */; };
@@ -35,6 +41,7 @@
 		4AB56EA32C0104AB0012F5B5 /* SplashBehaviourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56EA22C0104AB0012F5B5 /* SplashBehaviourTests.swift */; };
 		4AB56EA52C010BF50012F5B5 /* SplashBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56EA42C010BF50012F5B5 /* SplashBehaviour.swift */; };
 		4AB56EA62C010C050012F5B5 /* SplashBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56EA42C010BF50012F5B5 /* SplashBehaviour.swift */; };
+		4AB56EA82C010D7E0012F5B5 /* UsedDaysBehaviourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56EA72C010D7E0012F5B5 /* UsedDaysBehaviourTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysBehaviour.swift; sourceTree = "<group>"; };
+		4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysState.swift; sourceTree = "<group>"; };
+		4AA0D9662C01E28D00104B29 /* UsedDaysResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysResolver.swift; sourceTree = "<group>"; };
 		4AA5A1572C00B67B003F6852 /* EagleAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EagleAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA5A15A2C00B67B003F6852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AA5A1632C00B67C003F6852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +82,7 @@
 		4AB56E9E2C0102A10012F5B5 /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
 		4AB56EA22C0104AB0012F5B5 /* SplashBehaviourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashBehaviourTests.swift; sourceTree = "<group>"; };
 		4AB56EA42C010BF50012F5B5 /* SplashBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashBehaviour.swift; sourceTree = "<group>"; };
+		4AB56EA72C010D7E0012F5B5 /* UsedDaysBehaviourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysBehaviourTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +103,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AA0D9602C01E24700104B29 /* UsedDays */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */,
+				4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */,
+				4AA0D9662C01E28D00104B29 /* UsedDaysResolver.swift */,
+			);
+			path = UsedDays;
+			sourceTree = "<group>";
+		};
 		4AA5A14E2C00B67B003F6852 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				4AB56E772C00BC880012F5B5 /* Placeholder.swift */,
+				4AA0D9602C01E24700104B29 /* UsedDays */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -214,6 +236,7 @@
 			children = (
 				4AB56EA22C0104AB0012F5B5 /* SplashBehaviourTests.swift */,
 				4AB56E892C00BF000012F5B5 /* LoginBehaviourTests.swift */,
+				4AB56EA72C010D7E0012F5B5 /* UsedDaysBehaviourTests.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -338,9 +361,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB56E722C00BA300012F5B5 /* LoginViewController.swift in Sources */,
+				4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */,
 				4AB56E972C00EEDE0012F5B5 /* LoginResolver.swift in Sources */,
 				4AB56E8E2C00C0710012F5B5 /* LoginBehaviour.swift in Sources */,
 				4AB56E682C00B98E0012F5B5 /* User.swift in Sources */,
+				4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */,
 				4AB56E652C00B9370012F5B5 /* AppCoordinator.swift in Sources */,
 				4AB56E622C00B9140012F5B5 /* Coordinator.swift in Sources */,
 				4AB56E902C00C0800012F5B5 /* LoginState.swift in Sources */,
@@ -350,6 +375,7 @@
 				4AB56E6E2C00BA260012F5B5 /* SplashViewController.swift in Sources */,
 				4AB56E782C00BC880012F5B5 /* Placeholder.swift in Sources */,
 				4AB56E952C00EE2D0012F5B5 /* Closures.swift in Sources */,
+				4AA0D9672C01E28D00104B29 /* UsedDaysResolver.swift in Sources */,
 				4AB56E9C2C01011E0012F5B5 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,12 +385,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB56EA62C010C050012F5B5 /* SplashBehaviour.swift in Sources */,
+				4AA0D9692C01E2A600104B29 /* UsedDaysState.swift in Sources */,
+				4AA0D9632C01E25800104B29 /* UsedDaysBehaviour.swift in Sources */,
 				4AB56E8A2C00BF000012F5B5 /* LoginBehaviourTests.swift in Sources */,
 				4AB56E922C00C0B20012F5B5 /* LoginBehaviour.swift in Sources */,
+				4AA0D9682C01E2A000104B29 /* UsedDaysResolver.swift in Sources */,
 				4AB56E912C00C0B00012F5B5 /* LoginState.swift in Sources */,
 				4AB56E9F2C0102A10012F5B5 /* TestConstants.swift in Sources */,
 				4AB56E992C00FF4D0012F5B5 /* User.swift in Sources */,
 				4AB56E982C00EEFA0012F5B5 /* LoginResolver.swift in Sources */,
+				4AB56EA82C010D7E0012F5B5 /* UsedDaysBehaviourTests.swift in Sources */,
 				4AB56E9A2C00FFA10012F5B5 /* Closures.swift in Sources */,
 				4AB56EA32C0104AB0012F5B5 /* SplashBehaviourTests.swift in Sources */,
 				4AB56E9D2C01011E0012F5B5 /* APIError.swift in Sources */,
