@@ -32,6 +32,8 @@
 		4A8B83D42C026C8300F417F9 /* ValidatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83C62C02692600F417F9 /* ValidatorFactory.swift */; };
 		4A8B83D92C0275C400F417F9 /* UsedDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83D72C0275C400F417F9 /* UsedDaysViewController.swift */; };
 		4A8B83DA2C0275C400F417F9 /* UsedDaysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B83D82C0275C400F417F9 /* UsedDaysViewController.xib */; };
+		4A8B83DD2C027F9E00F417F9 /* OrganizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83DB2C027F9E00F417F9 /* OrganizationViewController.swift */; };
+		4A8B83DE2C027F9E00F417F9 /* OrganizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B83DC2C027F9E00F417F9 /* OrganizationViewController.xib */; };
 		4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9632C01E25800104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */; };
@@ -103,6 +105,8 @@
 		4A8B83C92C026A7000F417F9 /* ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
 		4A8B83D72C0275C400F417F9 /* UsedDaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysViewController.swift; sourceTree = "<group>"; };
 		4A8B83D82C0275C400F417F9 /* UsedDaysViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsedDaysViewController.xib; sourceTree = "<group>"; };
+		4A8B83DB2C027F9E00F417F9 /* OrganizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationViewController.swift; sourceTree = "<group>"; };
+		4A8B83DC2C027F9E00F417F9 /* OrganizationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrganizationViewController.xib; sourceTree = "<group>"; };
 		4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysBehaviour.swift; sourceTree = "<group>"; };
 		4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysState.swift; sourceTree = "<group>"; };
 		4AA0D9662C01E28D00104B29 /* UsedDaysResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysResolver.swift; sourceTree = "<group>"; };
@@ -197,6 +201,8 @@
 				4AA0D96D2C01E44100104B29 /* OrganizationState.swift */,
 				4AA0D9702C01E45F00104B29 /* OrganizationBehaviour.swift */,
 				4AA0D9732C01E47E00104B29 /* OrganizationResolver.swift */,
+				4A8B83DB2C027F9E00F417F9 /* OrganizationViewController.swift */,
+				4A8B83DC2C027F9E00F417F9 /* OrganizationViewController.xib */,
 			);
 			path = Organization;
 			sourceTree = "<group>";
@@ -468,6 +474,7 @@
 				4AB56E732C00BA300012F5B5 /* LoginViewController.xib in Resources */,
 				4AA5A1672C00B67C003F6852 /* LaunchScreen.storyboard in Resources */,
 				4AB56E6F2C00BA260012F5B5 /* SplashViewController.xib in Resources */,
+				4A8B83DE2C027F9E00F417F9 /* OrganizationViewController.xib in Resources */,
 				4AA5A1642C00B67C003F6852 /* Assets.xcassets in Resources */,
 				4A8B83DA2C0275C400F417F9 /* UsedDaysViewController.xib in Resources */,
 			);
@@ -558,6 +565,7 @@
 				4AB56E722C00BA300012F5B5 /* LoginViewController.swift in Sources */,
 				4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */,
 				4AA0D96E2C01E44100104B29 /* OrganizationState.swift in Sources */,
+				4A8B83DD2C027F9E00F417F9 /* OrganizationViewController.swift in Sources */,
 				4AB56E972C00EEDE0012F5B5 /* LoginResolver.swift in Sources */,
 				4AB56E8E2C00C0710012F5B5 /* LoginBehaviour.swift in Sources */,
 				4A8B83C22C023C9A00F417F9 /* AuthenticationService.swift in Sources */,
