@@ -28,5 +28,15 @@ final class SplashConcreteBehaviour {
 }
 
 extension SplashConcreteBehaviour: SplashBehaviour {
-  func login() {}
+  func login() {
+    resolver.resolve {[weak self] user, error in
+      guard let self = self else {return}
+      guard let user = user else {
+        self.onError?()
+        return
+      }
+      
+      onLogin?(user)
+    }
+  }
 }
