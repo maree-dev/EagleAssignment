@@ -41,6 +41,7 @@
 		4A8B83E82C02878500F417F9 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83E32C02864C00F417F9 /* Images.swift */; };
 		4A8B83EC2C02884000F417F9 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83EA2C02884000F417F9 /* MyInfoViewController.swift */; };
 		4A8B83ED2C02884000F417F9 /* MyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B83EB2C02884000F417F9 /* MyInfoViewController.xib */; };
+		4A8B83F22C0293BE00F417F9 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83F12C0293BE00F417F9 /* MockData.swift */; };
 		4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9632C01E25800104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */; };
@@ -119,6 +120,7 @@
 		4A8B83E62C02878100F417F9 /* ImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
 		4A8B83EA2C02884000F417F9 /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
 		4A8B83EB2C02884000F417F9 /* MyInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoViewController.xib; sourceTree = "<group>"; };
+		4A8B83F12C0293BE00F417F9 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysBehaviour.swift; sourceTree = "<group>"; };
 		4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysState.swift; sourceTree = "<group>"; };
 		4AA0D9662C01E28D00104B29 /* UsedDaysResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysResolver.swift; sourceTree = "<group>"; };
@@ -259,10 +261,11 @@
 			isa = PBXGroup;
 			children = (
 				4AB56E632C00B9250012F5B5 /* Flows */,
-				4AB56E602C00B9050012F5B5 /* Utils */,
 				4AB56E662C00B9790012F5B5 /* Networking */,
 				4AA5A16E2C00B69F003F6852 /* Resources */,
+				4AB56E602C00B9050012F5B5 /* Utils */,
 				4AA5A15A2C00B67B003F6852 /* AppDelegate.swift */,
+				4A8B83F12C0293BE00F417F9 /* MockData.swift */,
 				4AA5A1682C00B67C003F6852 /* Info.plist */,
 			);
 			path = EagleAssignment;
@@ -625,6 +628,7 @@
 				4AB56E952C00EE2D0012F5B5 /* Closures.swift in Sources */,
 				4AA0D9672C01E28D00104B29 /* UsedDaysResolver.swift in Sources */,
 				4AB56E9C2C01011E0012F5B5 /* APIError.swift in Sources */,
+				4A8B83F22C0293BE00F417F9 /* MockData.swift in Sources */,
 				4A8B83EC2C02884000F417F9 /* MyInfoViewController.swift in Sources */,
 				4A8B83C72C02692600F417F9 /* ValidatorFactory.swift in Sources */,
 			);
