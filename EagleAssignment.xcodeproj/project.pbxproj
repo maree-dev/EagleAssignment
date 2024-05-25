@@ -18,6 +18,18 @@
 		4A8B83BE2C01FE7400F417F9 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83BD2C01FE7400F417F9 /* UserService.swift */; };
 		4A8B83C22C023C9A00F417F9 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83C12C023C9A00F417F9 /* AuthenticationService.swift */; };
 		4A8B83C42C023EDC00F417F9 /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83C32C023EDC00F417F9 /* Days.swift */; };
+		4A8B83C72C02692600F417F9 /* ValidatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83C62C02692600F417F9 /* ValidatorFactory.swift */; };
+		4A8B83CA2C026A7000F417F9 /* ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83C92C026A7000F417F9 /* ValidatorTests.swift */; };
+		4A8B83CB2C026A8800F417F9 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83C12C023C9A00F417F9 /* AuthenticationService.swift */; };
+		4A8B83CC2C026A9800F417F9 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83B62C01F8E300F417F9 /* AccessToken.swift */; };
+		4A8B83CD2C026AA900F417F9 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83AE2C01F28200F417F9 /* Paths.swift */; };
+		4A8B83CE2C026ABB00F417F9 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83B82C01FC1D00F417F9 /* NetworkRequest.swift */; };
+		4A8B83CF2C026ABE00F417F9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83BA2C01FD7F00F417F9 /* NetworkManager.swift */; };
+		4A8B83D02C026B1000F417F9 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83B02C01F80900F417F9 /* Parser.swift */; };
+		4A8B83D12C026B2700F417F9 /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83C32C023EDC00F417F9 /* Days.swift */; };
+		4A8B83D22C026B2C00F417F9 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83B22C01F83700F417F9 /* APIResponse.swift */; };
+		4A8B83D32C026B2E00F417F9 /* EmptResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83B42C01F88C00F417F9 /* EmptResponse.swift */; };
+		4A8B83D42C026C8300F417F9 /* ValidatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83C62C02692600F417F9 /* ValidatorFactory.swift */; };
 		4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9632C01E25800104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */; };
@@ -85,6 +97,8 @@
 		4A8B83BD2C01FE7400F417F9 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		4A8B83C12C023C9A00F417F9 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		4A8B83C32C023EDC00F417F9 /* Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
+		4A8B83C62C02692600F417F9 /* ValidatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorFactory.swift; sourceTree = "<group>"; };
+		4A8B83C92C026A7000F417F9 /* ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
 		4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysBehaviour.swift; sourceTree = "<group>"; };
 		4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysState.swift; sourceTree = "<group>"; };
 		4AA0D9662C01E28D00104B29 /* UsedDaysResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysResolver.swift; sourceTree = "<group>"; };
@@ -153,6 +167,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		4A8B83C82C026A5500F417F9 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A8B83C92C026A7000F417F9 /* ValidatorTests.swift */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
 		4AA0D9602C01E24700104B29 /* UsedDays */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,8 +241,9 @@
 			isa = PBXGroup;
 			children = (
 				4AB56E742C00BA6A0012F5B5 /* ViewController */,
-				4AB56E942C00EE2D0012F5B5 /* Closures.swift */,
+				4A8B83C62C02692600F417F9 /* ValidatorFactory.swift */,
 				4AB56E612C00B9140012F5B5 /* Coordinator.swift */,
+				4AB56E942C00EE2D0012F5B5 /* Closures.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -293,6 +316,7 @@
 		4AB56E7E2C00BE500012F5B5 /* EagleAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				4A8B83C82C026A5500F417F9 /* UnitTests */,
 				4AB56E862C00BE550012F5B5 /* Flows */,
 				4AB56E9E2C0102A10012F5B5 /* TestConstants.swift */,
 			);
@@ -550,6 +574,7 @@
 				4AB56E952C00EE2D0012F5B5 /* Closures.swift in Sources */,
 				4AA0D9672C01E28D00104B29 /* UsedDaysResolver.swift in Sources */,
 				4AB56E9C2C01011E0012F5B5 /* APIError.swift in Sources */,
+				4A8B83C72C02692600F417F9 /* ValidatorFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,20 +586,31 @@
 				4AB56EA62C010C050012F5B5 /* SplashBehaviour.swift in Sources */,
 				4AA0D9692C01E2A600104B29 /* UsedDaysState.swift in Sources */,
 				4AA0D9722C01E45F00104B29 /* OrganizationBehaviour.swift in Sources */,
+				4A8B83CD2C026AA900F417F9 /* Paths.swift in Sources */,
+				4A8B83CA2C026A7000F417F9 /* ValidatorTests.swift in Sources */,
 				4AA0D9752C01E47E00104B29 /* OrganizationResolver.swift in Sources */,
 				4AA0D9632C01E25800104B29 /* UsedDaysBehaviour.swift in Sources */,
 				4AB56E8A2C00BF000012F5B5 /* LoginBehaviourTests.swift in Sources */,
 				4AB56E922C00C0B20012F5B5 /* LoginBehaviour.swift in Sources */,
 				4AA0D9682C01E2A000104B29 /* UsedDaysResolver.swift in Sources */,
 				4AB56E912C00C0B00012F5B5 /* LoginState.swift in Sources */,
+				4A8B83CF2C026ABE00F417F9 /* NetworkManager.swift in Sources */,
+				4A8B83D42C026C8300F417F9 /* ValidatorFactory.swift in Sources */,
 				4AA0D96F2C01E44100104B29 /* OrganizationState.swift in Sources */,
 				4AB56E9F2C0102A10012F5B5 /* TestConstants.swift in Sources */,
 				4AB56E992C00FF4D0012F5B5 /* User.swift in Sources */,
+				4A8B83CE2C026ABB00F417F9 /* NetworkRequest.swift in Sources */,
+				4A8B83D02C026B1000F417F9 /* Parser.swift in Sources */,
+				4A8B83CC2C026A9800F417F9 /* AccessToken.swift in Sources */,
 				4AB56E982C00EEFA0012F5B5 /* LoginResolver.swift in Sources */,
+				4A8B83D12C026B2700F417F9 /* Days.swift in Sources */,
 				4AB56EA82C010D7E0012F5B5 /* UsedDaysBehaviourTests.swift in Sources */,
+				4A8B83D32C026B2E00F417F9 /* EmptResponse.swift in Sources */,
 				4AB56E9A2C00FFA10012F5B5 /* Closures.swift in Sources */,
 				4AB56EA32C0104AB0012F5B5 /* SplashBehaviourTests.swift in Sources */,
 				4AB56E9D2C01011E0012F5B5 /* APIError.swift in Sources */,
+				4A8B83CB2C026A8800F417F9 /* AuthenticationService.swift in Sources */,
+				4A8B83D22C026B2C00F417F9 /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
