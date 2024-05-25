@@ -8,5 +8,11 @@
 import Foundation
 
 protocol UsedDaysResolver {
-  func resolver(completion: DoubleParameterClosure<[String]?, APIError?>)
+  func resolve(completion: @escaping DoubleParameterClosure<[Days]?, APIError?>)
+}
+
+final class UsedDaysConcreteResolver: UsedDaysResolver {
+  func resolve(completion: @escaping DoubleParameterClosure<[Days]?, APIError?>) {
+    completion(nil, nil)
+  }
 }
