@@ -34,6 +34,13 @@
 		4A8B83DA2C0275C400F417F9 /* UsedDaysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B83D82C0275C400F417F9 /* UsedDaysViewController.xib */; };
 		4A8B83DD2C027F9E00F417F9 /* OrganizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83DB2C027F9E00F417F9 /* OrganizationViewController.swift */; };
 		4A8B83DE2C027F9E00F417F9 /* OrganizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B83DC2C027F9E00F417F9 /* OrganizationViewController.xib */; };
+		4A8B83E02C02838300F417F9 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83DF2C02838300F417F9 /* TabViewController.swift */; };
+		4A8B83E22C0285D200F417F9 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83E12C0285D200F417F9 /* Strings.swift */; };
+		4A8B83E42C02864C00F417F9 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83E32C02864C00F417F9 /* Images.swift */; };
+		4A8B83E72C02878100F417F9 /* ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83E62C02878100F417F9 /* ImageTests.swift */; };
+		4A8B83E82C02878500F417F9 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83E32C02864C00F417F9 /* Images.swift */; };
+		4A8B83EC2C02884000F417F9 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83EA2C02884000F417F9 /* MyInfoViewController.swift */; };
+		4A8B83ED2C02884000F417F9 /* MyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B83EB2C02884000F417F9 /* MyInfoViewController.xib */; };
 		4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9632C01E25800104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */; };
@@ -58,7 +65,6 @@
 		4AB56E722C00BA300012F5B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E702C00BA300012F5B5 /* LoginViewController.swift */; };
 		4AB56E732C00BA300012F5B5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AB56E712C00BA300012F5B5 /* LoginViewController.xib */; };
 		4AB56E762C00BA7F0012F5B5 /* ViewController+Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E752C00BA7F0012F5B5 /* ViewController+Instance.swift */; };
-		4AB56E782C00BC880012F5B5 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E772C00BC880012F5B5 /* Placeholder.swift */; };
 		4AB56E8A2C00BF000012F5B5 /* LoginBehaviourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E892C00BF000012F5B5 /* LoginBehaviourTests.swift */; };
 		4AB56E8E2C00C0710012F5B5 /* LoginBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E8D2C00C0710012F5B5 /* LoginBehaviour.swift */; };
 		4AB56E902C00C0800012F5B5 /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E8F2C00C0800012F5B5 /* LoginState.swift */; };
@@ -107,6 +113,12 @@
 		4A8B83D82C0275C400F417F9 /* UsedDaysViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsedDaysViewController.xib; sourceTree = "<group>"; };
 		4A8B83DB2C027F9E00F417F9 /* OrganizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationViewController.swift; sourceTree = "<group>"; };
 		4A8B83DC2C027F9E00F417F9 /* OrganizationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrganizationViewController.xib; sourceTree = "<group>"; };
+		4A8B83DF2C02838300F417F9 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		4A8B83E12C0285D200F417F9 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		4A8B83E32C02864C00F417F9 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		4A8B83E62C02878100F417F9 /* ImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
+		4A8B83EA2C02884000F417F9 /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
+		4A8B83EB2C02884000F417F9 /* MyInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoViewController.xib; sourceTree = "<group>"; };
 		4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysBehaviour.swift; sourceTree = "<group>"; };
 		4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysState.swift; sourceTree = "<group>"; };
 		4AA0D9662C01E28D00104B29 /* UsedDaysResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysResolver.swift; sourceTree = "<group>"; };
@@ -127,7 +139,6 @@
 		4AB56E702C00BA300012F5B5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4AB56E712C00BA300012F5B5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		4AB56E752C00BA7F0012F5B5 /* ViewController+Instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Instance.swift"; sourceTree = "<group>"; };
-		4AB56E772C00BC880012F5B5 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		4AB56E7D2C00BE500012F5B5 /* EagleAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EagleAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB56E892C00BF000012F5B5 /* LoginBehaviourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBehaviourTests.swift; sourceTree = "<group>"; };
 		4AB56E8D2C00C0710012F5B5 /* LoginBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBehaviour.swift; sourceTree = "<group>"; };
@@ -181,6 +192,23 @@
 				4A8B83C92C026A7000F417F9 /* ValidatorTests.swift */,
 			);
 			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		4A8B83E52C02875F00F417F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A8B83E62C02878100F417F9 /* ImageTests.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4A8B83E92C02881800F417F9 /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				4A8B83EA2C02884000F417F9 /* MyInfoViewController.swift */,
+				4A8B83EB2C02884000F417F9 /* MyInfoViewController.xib */,
+			);
+			path = MyInfo;
 			sourceTree = "<group>";
 		};
 		4AA0D9602C01E24700104B29 /* UsedDays */ = {
@@ -243,6 +271,8 @@
 		4AA5A16E2C00B69F003F6852 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4A8B83E12C0285D200F417F9 /* Strings.swift */,
+				4A8B83E32C02864C00F417F9 /* Images.swift */,
 				4AA5A1632C00B67C003F6852 /* Assets.xcassets */,
 				4AA5A1652C00B67C003F6852 /* LaunchScreen.storyboard */,
 			);
@@ -310,9 +340,10 @@
 		4AB56E6B2C00B9F90012F5B5 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				4AB56E772C00BC880012F5B5 /* Placeholder.swift */,
+				4A8B83DF2C02838300F417F9 /* TabViewController.swift */,
 				4AA0D96C2C01E43100104B29 /* Organization */,
 				4AA0D9602C01E24700104B29 /* UsedDays */,
+				4A8B83E92C02881800F417F9 /* MyInfo */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -328,8 +359,9 @@
 		4AB56E7E2C00BE500012F5B5 /* EagleAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				4A8B83C82C026A5500F417F9 /* UnitTests */,
 				4AB56E862C00BE550012F5B5 /* Flows */,
+				4A8B83C82C026A5500F417F9 /* UnitTests */,
+				4A8B83E52C02875F00F417F9 /* Resources */,
 				4AB56E9E2C0102A10012F5B5 /* TestConstants.swift */,
 			);
 			path = EagleAssignmentTests;
@@ -474,6 +506,7 @@
 				4AB56E732C00BA300012F5B5 /* LoginViewController.xib in Resources */,
 				4AA5A1672C00B67C003F6852 /* LaunchScreen.storyboard in Resources */,
 				4AB56E6F2C00BA260012F5B5 /* SplashViewController.xib in Resources */,
+				4A8B83ED2C02884000F417F9 /* MyInfoViewController.xib in Resources */,
 				4A8B83DE2C027F9E00F417F9 /* OrganizationViewController.xib in Resources */,
 				4AA5A1642C00B67C003F6852 /* Assets.xcassets in Resources */,
 				4A8B83DA2C0275C400F417F9 /* UsedDaysViewController.xib in Resources */,
@@ -565,11 +598,14 @@
 				4AB56E722C00BA300012F5B5 /* LoginViewController.swift in Sources */,
 				4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */,
 				4AA0D96E2C01E44100104B29 /* OrganizationState.swift in Sources */,
+				4A8B83E42C02864C00F417F9 /* Images.swift in Sources */,
 				4A8B83DD2C027F9E00F417F9 /* OrganizationViewController.swift in Sources */,
 				4AB56E972C00EEDE0012F5B5 /* LoginResolver.swift in Sources */,
 				4AB56E8E2C00C0710012F5B5 /* LoginBehaviour.swift in Sources */,
 				4A8B83C22C023C9A00F417F9 /* AuthenticationService.swift in Sources */,
 				4AB56E682C00B98E0012F5B5 /* User.swift in Sources */,
+				4A8B83E22C0285D200F417F9 /* Strings.swift in Sources */,
+				4A8B83E02C02838300F417F9 /* TabViewController.swift in Sources */,
 				4A8B83B32C01F83700F417F9 /* APIResponse.swift in Sources */,
 				4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */,
 				4AB56E652C00B9370012F5B5 /* AppCoordinator.swift in Sources */,
@@ -585,11 +621,11 @@
 				4AB56E6E2C00BA260012F5B5 /* SplashViewController.swift in Sources */,
 				4A8B83D92C0275C400F417F9 /* UsedDaysViewController.swift in Sources */,
 				4A8B83B52C01F88C00F417F9 /* EmptResponse.swift in Sources */,
-				4AB56E782C00BC880012F5B5 /* Placeholder.swift in Sources */,
 				4AA0D9742C01E47E00104B29 /* OrganizationResolver.swift in Sources */,
 				4AB56E952C00EE2D0012F5B5 /* Closures.swift in Sources */,
 				4AA0D9672C01E28D00104B29 /* UsedDaysResolver.swift in Sources */,
 				4AB56E9C2C01011E0012F5B5 /* APIError.swift in Sources */,
+				4A8B83EC2C02884000F417F9 /* MyInfoViewController.swift in Sources */,
 				4A8B83C72C02692600F417F9 /* ValidatorFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,12 +653,14 @@
 				4AB56E992C00FF4D0012F5B5 /* User.swift in Sources */,
 				4A8B83CE2C026ABB00F417F9 /* NetworkRequest.swift in Sources */,
 				4A8B83D02C026B1000F417F9 /* Parser.swift in Sources */,
+				4A8B83E82C02878500F417F9 /* Images.swift in Sources */,
 				4A8B83CC2C026A9800F417F9 /* AccessToken.swift in Sources */,
 				4AB56E982C00EEFA0012F5B5 /* LoginResolver.swift in Sources */,
 				4A8B83D12C026B2700F417F9 /* Days.swift in Sources */,
 				4AB56EA82C010D7E0012F5B5 /* UsedDaysBehaviourTests.swift in Sources */,
 				4A8B83D32C026B2E00F417F9 /* EmptResponse.swift in Sources */,
 				4AB56E9A2C00FFA10012F5B5 /* Closures.swift in Sources */,
+				4A8B83E72C02878100F417F9 /* ImageTests.swift in Sources */,
 				4AB56EA32C0104AB0012F5B5 /* SplashBehaviourTests.swift in Sources */,
 				4AB56E9D2C01011E0012F5B5 /* APIError.swift in Sources */,
 				4A8B83CB2C026A8800F417F9 /* AuthenticationService.swift in Sources */,
