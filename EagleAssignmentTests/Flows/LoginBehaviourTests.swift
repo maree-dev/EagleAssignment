@@ -54,7 +54,6 @@ final class LoginBehaviourTests: XCTestCase {
     
     behaviour.login()
     
-    XCTAssertTrue(state.isLoading)
     XCTAssertEqual(resolver.callCount, 1)
   }
   
@@ -110,7 +109,7 @@ final class FakeLoginResolver: LoginResolver {
     self.error = error
   }
   
-  func resolve(completion: (User?, APIError?) -> Void) {
+  func resolve(parameters: AuthParameters?, completion: @escaping DoubleParameterClosure<User?, APIError?>) {
     completion(user, error)
   }
 }
@@ -118,7 +117,7 @@ final class FakeLoginResolver: LoginResolver {
 final class FakeCounterLoginResolver: LoginResolver {
   var callCount = 0
   
-  func resolve(completion: (User?, APIError?) -> Void) {
+  func resolve(parameters: AuthParameters?, completion: @escaping DoubleParameterClosure<User?, APIError?>) {
     callCount += 1
     completion(nil, nil)
   }

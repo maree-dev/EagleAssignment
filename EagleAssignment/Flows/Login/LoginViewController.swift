@@ -8,22 +8,28 @@
 import UIKit
 
 final class LoginViewController: UIViewController {
+  // MARK: - Flows
+  var onSuccess: SingleParameterClosure<User>?
+  var onError: SingleParameterClosure<APIError>?
   
+  // MARK: - Properties
+  private let state = LoginState()
+  private let behaviour = LoginConcreteBehaviour(resolver: AuthenticationResolver())
+  
+  // MARK: - ViewLifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    behaviour.setup(state)
+    bindActions()
     
-    // Do any additional setup after loading the view.
+    behaviour.set(email: "test@test.net")
+    behaviour.set(password: "testerko")
+    behaviour.login()
   }
   
-  
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destination.
-   // Pass the selected object to the new view controller.
-   }
-   */
-  
+  // MARK: - Private Methods
+  private func bindActions() {
+    behaviour.onError = {[weak self] in self?.onError?($0)}
+    behaviour.onLogin = {[weak self] in self?.onSuccess?($0)}
+  }
 }
