@@ -12,6 +12,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="EagleAssignment" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewCTA" destination="3a7-cn-T3H" id="GDB-pm-uDE"/>
+                <outlet property="viewContent" destination="dxV-up-zX9" id="8DX-95-3wp"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,20 +21,30 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knM-SJ-O2g">
-                    <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxV-up-zX9" userLabel="View Content">
+                    <rect key="frame" x="0.0" y="59" width="393" height="697"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3a7-cn-T3H" userLabel="View CTA">
+                    <rect key="frame" x="24" y="756" width="345" height="46"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="wys-sj-8r5"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="knM-SJ-O2g" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="9NW-0g-Zsy"/>
-                <constraint firstItem="knM-SJ-O2g" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hIt-Ka-EEf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dxV-up-zX9" secondAttribute="trailing" id="1Mz-pp-qxM"/>
+                <constraint firstItem="dxV-up-zX9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2xb-Y3-Laf"/>
+                <constraint firstItem="dxV-up-zX9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DNx-ok-IIv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3a7-cn-T3H" secondAttribute="trailing" constant="24" id="LeD-qZ-L7d"/>
+                <constraint firstItem="3a7-cn-T3H" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="TfJ-dP-Vs1"/>
+                <constraint firstItem="3a7-cn-T3H" firstAttribute="top" secondItem="dxV-up-zX9" secondAttribute="bottom" id="XPH-iO-BI0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3a7-cn-T3H" secondAttribute="bottom" constant="16" id="cdC-n1-abD"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="-11"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
         </view>
     </objects>
     <resources>

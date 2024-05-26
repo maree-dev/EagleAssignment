@@ -17,6 +17,7 @@ protocol LoginBehaviour {
 final class LoginConcreteBehaviour {
   var onLogin: SingleParameterClosure<User>?
   var onError: SingleParameterClosure<APIError>?
+  var onChange: VoidClosure?
   
   private let resolver: LoginResolver
   private weak var state: LoginState!
@@ -31,10 +32,14 @@ final class LoginConcreteBehaviour {
   }
   
   private func validateInputs() -> Bool {
-    let email = ValidatorFactory.validator(for: .email(state.email))
-    let password = ValidatorFactory.validator(for: .password(state.password))
+    let isEmailValid = ValidatorFactory.validator(for: .email(state.email)).validate()
+    let isPasswordValid = ValidatorFactory.validator(for: .password(state.password)).validate()
     
-    return email.validate() && password.validate()
+    state.emailError = isEmailValid ? nil : Strings.Login.emailError
+    state.passwordError = isPasswordValid ? nil : Strings.Login.passwordError
+    onChange?()
+
+    return isEmailValid && isPasswordValid
   }
 }
 
@@ -62,6 +67,8 @@ extension LoginConcreteBehaviour: LoginBehaviour {
       
       if let user = user {self?.onLogin?(user)}
       else {self?.onError?(error ?? .generic)}
+      
+      self?.onChange?()
     }
   }
 }

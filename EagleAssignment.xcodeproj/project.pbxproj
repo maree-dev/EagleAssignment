@@ -39,10 +39,8 @@
 		4A8B83E82C02878500F417F9 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83E32C02864C00F417F9 /* Images.swift */; };
 		4A8B83EC2C02884000F417F9 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83EA2C02884000F417F9 /* MyInfoViewController.swift */; };
 		4A8B83ED2C02884000F417F9 /* MyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B83EB2C02884000F417F9 /* MyInfoViewController.xib */; };
-		4A8B83F22C0293BE00F417F9 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83F12C0293BE00F417F9 /* MockData.swift */; };
 		4A8B83F72C029DB500F417F9 /* EmployeeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83F62C029DB500F417F9 /* EmployeeCardView.swift */; };
 		4A8B83F92C029DD000F417F9 /* EmployeeCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B83F82C029DD000F417F9 /* EmployeeCardView.xib */; };
-		4A8B83FA2C02A12300F417F9 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83F12C0293BE00F417F9 /* MockData.swift */; };
 		4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9632C01E25800104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */; };
@@ -110,6 +108,13 @@
 		4AF49D3E2C0343C90037FF98 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83BD2C01FE7400F417F9 /* UserService.swift */; };
 		4AF49D3F2C0343D70037FF98 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D2B2C0329D10037FF98 /* Organization.swift */; };
 		4AF49D402C0343EE0037FF98 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83E12C0285D200F417F9 /* Strings.swift */; };
+		4AF49D432C034C490037FF98 /* InputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D422C034C490037FF98 /* InputFieldView.swift */; };
+		4AF49D452C034C530037FF98 /* InputFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF49D442C034C520037FF98 /* InputFieldView.xib */; };
+		4AF49D4B2C036ADC0037FF98 /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D4A2C036ADC0037FF98 /* LoginFormView.swift */; };
+		4AF49D4D2C036AEB0037FF98 /* LoginFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF49D4C2C036AEB0037FF98 /* LoginFormView.xib */; };
+		4AF49D502C03710B0037FF98 /* CTAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D4F2C03710B0037FF98 /* CTAView.swift */; };
+		4AF49D522C0371180037FF98 /* CTAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF49D512C0371180037FF98 /* CTAView.xib */; };
+		4AF49D542C03722A0037FF98 /* ScallableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D532C03722A0037FF98 /* ScallableView.swift */; };
 		73615EBC86F2BFCCC9D86B54 /* Pods_EagleAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB52F25C364BF4E60DCD5CB6 /* Pods_EagleAssignmentTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -146,7 +151,6 @@
 		4A8B83E62C02878100F417F9 /* ImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
 		4A8B83EA2C02884000F417F9 /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
 		4A8B83EB2C02884000F417F9 /* MyInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoViewController.xib; sourceTree = "<group>"; };
-		4A8B83F12C0293BE00F417F9 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		4A8B83F62C029DB500F417F9 /* EmployeeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCardView.swift; sourceTree = "<group>"; };
 		4A8B83F82C029DD000F417F9 /* EmployeeCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeCardView.xib; sourceTree = "<group>"; };
 		4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysBehaviour.swift; sourceTree = "<group>"; };
@@ -198,6 +202,13 @@
 		4AF49D352C0330CD0037FF98 /* InfoCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCardView.xib; sourceTree = "<group>"; };
 		4AF49D372C0337F70037FF98 /* UsedDaysAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysAdapterTests.swift; sourceTree = "<group>"; };
 		4AF49D3A2C0338160037FF98 /* UsedDaysAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysAdapter.swift; sourceTree = "<group>"; };
+		4AF49D422C034C490037FF98 /* InputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldView.swift; sourceTree = "<group>"; };
+		4AF49D442C034C520037FF98 /* InputFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputFieldView.xib; sourceTree = "<group>"; };
+		4AF49D4A2C036ADC0037FF98 /* LoginFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
+		4AF49D4C2C036AEB0037FF98 /* LoginFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginFormView.xib; sourceTree = "<group>"; };
+		4AF49D4F2C03710B0037FF98 /* CTAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAView.swift; sourceTree = "<group>"; };
+		4AF49D512C0371180037FF98 /* CTAView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CTAView.xib; sourceTree = "<group>"; };
+		4AF49D532C03722A0037FF98 /* ScallableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScallableView.swift; sourceTree = "<group>"; };
 		51C769F7343B73DB82A8B83F /* Pods-EagleAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EagleAssignment.release.xcconfig"; path = "Target Support Files/Pods-EagleAssignment/Pods-EagleAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		55523F5CB1D2142721E0978A /* Pods-EagleAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EagleAssignment.debug.xcconfig"; path = "Target Support Files/Pods-EagleAssignment/Pods-EagleAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		7CE2D6A4CF583446CABDAB0D /* Pods-EagleAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EagleAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-EagleAssignmentTests/Pods-EagleAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +275,8 @@
 		4A8B83F32C029D6B00F417F9 /* Styleguide */ = {
 			isa = PBXGroup;
 			children = (
+				4AF49D4E2C0370FB0037FF98 /* Buttons */,
+				4AF49D412C0345D30037FF98 /* Inputs */,
 				4A8B83F42C029D7B00F417F9 /* Cards */,
 			);
 			path = Styleguide;
@@ -344,7 +357,6 @@
 				4AA5A16E2C00B69F003F6852 /* Resources */,
 				4AB56E602C00B9050012F5B5 /* Utils */,
 				4AA5A15A2C00B67B003F6852 /* AppDelegate.swift */,
-				4A8B83F12C0293BE00F417F9 /* MockData.swift */,
 				4AA5A1682C00B67C003F6852 /* Info.plist */,
 			);
 			path = EagleAssignment;
@@ -422,6 +434,7 @@
 				4AA91E412C02AA6C00B6F2FD /* TableView */,
 				4AA91E442C02AAC700B6F2FD /* TableViewCell */,
 				4A8B83C62C02692600F417F9 /* ValidatorFactory.swift */,
+				4AF49D532C03722A0037FF98 /* ScallableView.swift */,
 				4AB56E612C00B9140012F5B5 /* Coordinator.swift */,
 				4AB56E942C00EE2D0012F5B5 /* Closures.swift */,
 			);
@@ -466,6 +479,7 @@
 		4AB56E6A2C00B9F00012F5B5 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				4AF49D492C036AD10037FF98 /* Form */,
 				4AB56E962C00EEDE0012F5B5 /* LoginResolver.swift */,
 				4AB56E8F2C00C0800012F5B5 /* LoginState.swift */,
 				4AB56E8D2C00C0710012F5B5 /* LoginBehaviour.swift */,
@@ -560,6 +574,33 @@
 				4AF49D3A2C0338160037FF98 /* UsedDaysAdapter.swift */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		4AF49D412C0345D30037FF98 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				4AF49D422C034C490037FF98 /* InputFieldView.swift */,
+				4AF49D442C034C520037FF98 /* InputFieldView.xib */,
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
+		4AF49D492C036AD10037FF98 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				4AF49D4A2C036ADC0037FF98 /* LoginFormView.swift */,
+				4AF49D4C2C036AEB0037FF98 /* LoginFormView.xib */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		4AF49D4E2C0370FB0037FF98 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4AF49D4F2C03710B0037FF98 /* CTAView.swift */,
+				4AF49D512C0371180037FF98 /* CTAView.xib */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		9B9DAACCC5D2841AF3A14F0A /* Frameworks */ = {
@@ -672,8 +713,11 @@
 				4AA5A1672C00B67C003F6852 /* LaunchScreen.storyboard in Resources */,
 				4AA91E352C02A6AA00B6F2FD /* OrganizationListView.xib in Resources */,
 				4AF49D362C0330CD0037FF98 /* InfoCardView.xib in Resources */,
+				4AF49D522C0371180037FF98 /* CTAView.xib in Resources */,
 				4A8B83F92C029DD000F417F9 /* EmployeeCardView.xib in Resources */,
+				4AF49D4D2C036AEB0037FF98 /* LoginFormView.xib in Resources */,
 				4AB56E6F2C00BA260012F5B5 /* SplashViewController.xib in Resources */,
+				4AF49D452C034C530037FF98 /* InputFieldView.xib in Resources */,
 				4A8B83ED2C02884000F417F9 /* MyInfoViewController.xib in Resources */,
 				4A8B83DE2C027F9E00F417F9 /* OrganizationViewController.xib in Resources */,
 				4AA5A1642C00B67C003F6852 /* Assets.xcassets in Resources */,
@@ -772,12 +816,14 @@
 				4AA91E482C02AB2E00B6F2FD /* TableView+Dequeue.swift in Sources */,
 				4AF49D2F2C03307B0037FF98 /* UsedDaysListView.swift in Sources */,
 				4AA91E432C02AA7900B6F2FD /* TableView+RegisterCell.swift in Sources */,
+				4AF49D502C03710B0037FF98 /* CTAView.swift in Sources */,
 				4AA91E3D2C02A82400B6F2FD /* View+Instance.swift in Sources */,
 				4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */,
 				4AA0D96E2C01E44100104B29 /* OrganizationState.swift in Sources */,
 				4A8B83E42C02864C00F417F9 /* Images.swift in Sources */,
 				4A8B83DD2C027F9E00F417F9 /* OrganizationViewController.swift in Sources */,
 				4AB56E972C00EEDE0012F5B5 /* LoginResolver.swift in Sources */,
+				4AF49D542C03722A0037FF98 /* ScallableView.swift in Sources */,
 				4AB56E8E2C00C0710012F5B5 /* LoginBehaviour.swift in Sources */,
 				4A8B83C22C023C9A00F417F9 /* AuthenticationService.swift in Sources */,
 				4AB56E682C00B98E0012F5B5 /* User.swift in Sources */,
@@ -799,15 +845,16 @@
 				4AB56EA52C010BF50012F5B5 /* SplashBehaviour.swift in Sources */,
 				4AA5A15B2C00B67B003F6852 /* AppDelegate.swift in Sources */,
 				4AB56E6E2C00BA260012F5B5 /* SplashViewController.swift in Sources */,
+				4AF49D432C034C490037FF98 /* InputFieldView.swift in Sources */,
 				4A8B83D92C0275C400F417F9 /* UsedDaysViewController.swift in Sources */,
 				4AA0D9742C01E47E00104B29 /* OrganizationResolver.swift in Sources */,
 				4AB56E952C00EE2D0012F5B5 /* Closures.swift in Sources */,
 				4AA91E462C02AADC00B6F2FD /* TableViewCell+Identifier.swift in Sources */,
 				4AA91E332C02A69F00B6F2FD /* OrganizationListView.swift in Sources */,
+				4AF49D4B2C036ADC0037FF98 /* LoginFormView.swift in Sources */,
 				4AA0D9672C01E28D00104B29 /* UsedDaysResolver.swift in Sources */,
 				4AB56E9C2C01011E0012F5B5 /* APIError.swift in Sources */,
 				4A8B83F72C029DB500F417F9 /* EmployeeCardView.swift in Sources */,
-				4A8B83F22C0293BE00F417F9 /* MockData.swift in Sources */,
 				4A8B83EC2C02884000F417F9 /* MyInfoViewController.swift in Sources */,
 				4A8B83C72C02692600F417F9 /* ValidatorFactory.swift in Sources */,
 			);
@@ -832,7 +879,6 @@
 				4AA0D9682C01E2A000104B29 /* UsedDaysResolver.swift in Sources */,
 				4AB56E912C00C0B00012F5B5 /* LoginState.swift in Sources */,
 				4A8B83CF2C026ABE00F417F9 /* NetworkManager.swift in Sources */,
-				4A8B83FA2C02A12300F417F9 /* MockData.swift in Sources */,
 				4A8B83D42C026C8300F417F9 /* ValidatorFactory.swift in Sources */,
 				4AA0D96F2C01E44100104B29 /* OrganizationState.swift in Sources */,
 				4AB56E9F2C0102A10012F5B5 /* TestConstants.swift in Sources */,
