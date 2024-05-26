@@ -29,16 +29,19 @@ extension AppConcreteCoordinator: AppCoordinator {
 //    guard let controller: SplashViewController = .instance() else {return}
 //    controller.onFinish = {[weak self] in self?.dashboard($0)}
 //    controller.onError = {[weak self] in self?.authenticate()}
-//    
+    
 //    navigation.viewControllers = [controller]
     
-    dashboard(User())
+//    dashboard(User())
+    
+    authenticate()
   }
   
   func dismiss() {}
   
   func authenticate() {
     guard let controller: LoginViewController = .instance() else {return}
+    controller.onSuccess = {[weak self] in self?.dashboard($0)}
     navigation.viewControllers = [controller]
   }
   

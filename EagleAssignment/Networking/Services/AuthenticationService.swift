@@ -12,7 +12,7 @@ final class AuthenticationService {
     let request = JSONNetworkRequest(
       baseUrl: Path.baseURL,
       path: Path.login,
-      method: .get,
+      method: .post,
       parameters: parameters.params(),
       completion: completion)
     

@@ -11,3 +11,7 @@ struct APIResponse<Model: Decodable>: Decodable {
   var data: Model?
   var error: APIError?
 }
+
+struct Items<Model: Decodable>: Decodable {
+  var items: Model?
+}

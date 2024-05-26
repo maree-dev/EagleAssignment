@@ -8,6 +8,16 @@
 import Foundation
 
 final class UserService {
+  class func profile(completion: @escaping DoubleParameterClosure<User?, APIError?>) {
+    let request = JSONNetworkRequest(
+      baseUrl: Path.baseURL,
+      path: Path.profile,
+      method: .get,
+      completion: completion)
+    
+    NetworkManager.add(request: request)
+  }
+  
   class func update(parameters: UserParameters, completion: @escaping DoubleParameterClosure<User?, APIError?>) {
     let request = JSONNetworkRequest(
       baseUrl: Path.baseURL,
@@ -19,7 +29,7 @@ final class UserService {
     NetworkManager.add(request: request)
   }
   
-  class func days(completion: @escaping DoubleParameterClosure<[Days]?, APIError?>) {
+  class func days(completion: @escaping DoubleParameterClosure<UsedDays?, APIError?>) {
     let request = JSONNetworkRequest(
       baseUrl: Path.baseURL,
       path: Path.days,
@@ -29,10 +39,10 @@ final class UserService {
     NetworkManager.add(request: request)
   }
   
-  class func organization(completion: @escaping DoubleParameterClosure<[User]?, APIError?>) {
+  class func organization(completion: @escaping DoubleParameterClosure<Organization?, APIError?>) {
     let request = JSONNetworkRequest(
       baseUrl: Path.baseURL,
-      path: Path.login,
+      path: Path.organization,
       method: .get,
       completion: completion)
     

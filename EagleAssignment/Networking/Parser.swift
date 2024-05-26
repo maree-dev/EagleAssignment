@@ -12,18 +12,11 @@ final class JSONParser<Model: Decodable> {
     guard let data = data else {
       return APIResponse(data: nil, error: APIError.generic)
     }
-    // See if error is parsing
-    if let error = try? JSONDecoder().decode(APIError.self, from: data) {
-      return APIResponse<Model>(data: nil, error: error)
-    }
-    // Continue
+    
     do {
-      let model = try JSONDecoder().decode(APIResponse<Model>.self, from: data)
-      return model
+      let model = try JSONDecoder().decode(Model.self, from: data)
+      return APIResponse(data: model, error: nil)
     } catch {
-      #if DEBUG
-      print("Unknown error: \(error)")
-      #endif
       // Try to parse as error
       let error = try? JSONDecoder().decode(APIError.self, from: data)
       return APIResponse<Model>(data: nil, error: error ?? APIError.generic)

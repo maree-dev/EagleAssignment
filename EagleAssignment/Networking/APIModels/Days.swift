@@ -26,3 +26,7 @@ extension Days {
     case patronSaintDay = "patron_saint_day"
   }
 }
+
+struct UsedDays: Decodable {
+  var items: [Days]
+}
