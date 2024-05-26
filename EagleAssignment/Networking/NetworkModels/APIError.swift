@@ -12,6 +12,10 @@ struct APIError: Decodable {
   var status: Int?
 }
 
+extension APIError {
+  var valid: Bool {message != nil}
+}
+
 extension APIError: LocalizedError {
   public var errorDescription: String? {message}
 }

@@ -11,6 +11,7 @@ protocol AppCoordinator: Coordinator {
   func authenticate()
   func dashboard()
   func logout()
+  func alert(for message: APIError)
 }
 
 final class AppConcreteCoordinator {
@@ -36,13 +37,21 @@ extension AppConcreteCoordinator: AppCoordinator {
   func authenticate() {
     guard let controller: LoginViewController = .instance() else {return}
     controller.onLogin = {[weak self] in self?.dashboard()}
+    controller.onError = {[weak self] in self?.alert(for: $0)}
     navigation.viewControllers = [controller]
   }
   
   func dashboard() {
     guard let controller: TabViewController = .instance() else {return}
     controller.onLogout = {[weak self] in self?.logout()}
+    controller.onError = {[weak self] in self?.alert(for: $0)}
     navigation.viewControllers = [controller]
+  }
+  
+  func alert(for error: APIError) {
+    let alert: FlashMessageView = .instance()!
+    alert.message = error.errorDescription
+    alert.show(in: window)
   }
   
   func logout() {

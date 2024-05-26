@@ -10,6 +10,7 @@ import UIKit
 final class TabViewController: UITabBarController {
   // MARK: - Flows
   var onLogout: VoidClosure?
+  var onError: SingleParameterClosure<APIError>?
   
   // MARK: - Properties
   let usedDays: UsedDaysViewController = .instance()!
@@ -42,6 +43,9 @@ final class TabViewController: UITabBarController {
   }
   
   private func bindActions() {
+    organization.onError = {[weak self] in self?.onError?($0)}
+    usedDays.onError = {[weak self] in self?.onError?($0)}
+    myInfo.onError = {[weak self] in self?.onError?($0)}
     myInfo.onLogout = {[weak self] in self?.onLogout?()}
   }
 }
