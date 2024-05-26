@@ -114,7 +114,20 @@
 		4AF49D4D2C036AEB0037FF98 /* LoginFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF49D4C2C036AEB0037FF98 /* LoginFormView.xib */; };
 		4AF49D502C03710B0037FF98 /* CTAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D4F2C03710B0037FF98 /* CTAView.swift */; };
 		4AF49D522C0371180037FF98 /* CTAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF49D512C0371180037FF98 /* CTAView.xib */; };
-		4AF49D542C03722A0037FF98 /* ScallableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D532C03722A0037FF98 /* ScallableView.swift */; };
+		4AF49D562C0379220037FF98 /* MyInfoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D552C0379220037FF98 /* MyInfoState.swift */; };
+		4AF49D5B2C037A880037FF98 /* MyInfoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D5A2C037A880037FF98 /* MyInfoFormView.swift */; };
+		4AF49D5D2C037A960037FF98 /* MyInfoFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF49D5C2C037A960037FF98 /* MyInfoFormView.xib */; };
+		4AF49D612C0383F80037FF98 /* КеyboardDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D602C0383F80037FF98 /* КеyboardDetector.swift */; };
+		4AF49D632C038C1F0037FF98 /* MyInfoBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D622C038C1F0037FF98 /* MyInfoBehaviour.swift */; };
+		4AF49D652C038D780037FF98 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D642C038D780037FF98 /* EmptyResponse.swift */; };
+		4AF49D6A2C039A2B0037FF98 /* MyInfoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D692C039A2B0037FF98 /* MyInfoMapper.swift */; };
+		4AF49D6C2C039CBF0037FF98 /* MyInfoResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D6B2C039CBF0037FF98 /* MyInfoResolver.swift */; };
+		4AF49D6E2C03A97C0037FF98 /* MyInfoBehaviourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D6D2C03A97C0037FF98 /* MyInfoBehaviourTests.swift */; };
+		4AF49D6F2C03A98D0037FF98 /* MyInfoResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D6B2C039CBF0037FF98 /* MyInfoResolver.swift */; };
+		4AF49D702C03A98F0037FF98 /* MyInfoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D552C0379220037FF98 /* MyInfoState.swift */; };
+		4AF49D712C03A9910037FF98 /* MyInfoBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D622C038C1F0037FF98 /* MyInfoBehaviour.swift */; };
+		4AF49D722C03A9960037FF98 /* MyInfoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D692C039A2B0037FF98 /* MyInfoMapper.swift */; };
+		4AF49D732C03AA640037FF98 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF49D642C038D780037FF98 /* EmptyResponse.swift */; };
 		73615EBC86F2BFCCC9D86B54 /* Pods_EagleAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB52F25C364BF4E60DCD5CB6 /* Pods_EagleAssignmentTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -208,7 +221,15 @@
 		4AF49D4C2C036AEB0037FF98 /* LoginFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginFormView.xib; sourceTree = "<group>"; };
 		4AF49D4F2C03710B0037FF98 /* CTAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAView.swift; sourceTree = "<group>"; };
 		4AF49D512C0371180037FF98 /* CTAView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CTAView.xib; sourceTree = "<group>"; };
-		4AF49D532C03722A0037FF98 /* ScallableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScallableView.swift; sourceTree = "<group>"; };
+		4AF49D552C0379220037FF98 /* MyInfoState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoState.swift; sourceTree = "<group>"; };
+		4AF49D5A2C037A880037FF98 /* MyInfoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoFormView.swift; sourceTree = "<group>"; };
+		4AF49D5C2C037A960037FF98 /* MyInfoFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoFormView.xib; sourceTree = "<group>"; };
+		4AF49D602C0383F80037FF98 /* КеyboardDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "КеyboardDetector.swift"; sourceTree = "<group>"; };
+		4AF49D622C038C1F0037FF98 /* MyInfoBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoBehaviour.swift; sourceTree = "<group>"; };
+		4AF49D642C038D780037FF98 /* EmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
+		4AF49D692C039A2B0037FF98 /* MyInfoMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoMapper.swift; sourceTree = "<group>"; };
+		4AF49D6B2C039CBF0037FF98 /* MyInfoResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoResolver.swift; sourceTree = "<group>"; };
+		4AF49D6D2C03A97C0037FF98 /* MyInfoBehaviourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoBehaviourTests.swift; sourceTree = "<group>"; };
 		51C769F7343B73DB82A8B83F /* Pods-EagleAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EagleAssignment.release.xcconfig"; path = "Target Support Files/Pods-EagleAssignment/Pods-EagleAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		55523F5CB1D2142721E0978A /* Pods-EagleAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EagleAssignment.debug.xcconfig"; path = "Target Support Files/Pods-EagleAssignment/Pods-EagleAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		7CE2D6A4CF583446CABDAB0D /* Pods-EagleAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EagleAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-EagleAssignmentTests/Pods-EagleAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -266,6 +287,11 @@
 		4A8B83E92C02881800F417F9 /* MyInfo */ = {
 			isa = PBXGroup;
 			children = (
+				4AF49D682C039A210037FF98 /* Mapper */,
+				4AF49D572C037A540037FF98 /* Form */,
+				4AF49D6B2C039CBF0037FF98 /* MyInfoResolver.swift */,
+				4AF49D552C0379220037FF98 /* MyInfoState.swift */,
+				4AF49D622C038C1F0037FF98 /* MyInfoBehaviour.swift */,
 				4A8B83EA2C02884000F417F9 /* MyInfoViewController.swift */,
 				4A8B83EB2C02884000F417F9 /* MyInfoViewController.xib */,
 			);
@@ -433,8 +459,8 @@
 				4AB56E742C00BA6A0012F5B5 /* ViewController */,
 				4AA91E412C02AA6C00B6F2FD /* TableView */,
 				4AA91E442C02AAC700B6F2FD /* TableViewCell */,
+				4AF49D602C0383F80037FF98 /* КеyboardDetector.swift */,
 				4A8B83C62C02692600F417F9 /* ValidatorFactory.swift */,
-				4AF49D532C03722A0037FF98 /* ScallableView.swift */,
 				4AB56E612C00B9140012F5B5 /* Coordinator.swift */,
 				4AB56E942C00EE2D0012F5B5 /* Closures.swift */,
 			);
@@ -511,7 +537,7 @@
 		4AB56E7E2C00BE500012F5B5 /* EagleAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				4AB56E862C00BE550012F5B5 /* Flows */,
+				4AB56E862C00BE550012F5B5 /* BehaviourTests */,
 				4A8B83C82C026A5500F417F9 /* UnitTests */,
 				4A8B83E52C02875F00F417F9 /* Resources */,
 				4AB56E9E2C0102A10012F5B5 /* TestConstants.swift */,
@@ -519,15 +545,16 @@
 			path = EagleAssignmentTests;
 			sourceTree = "<group>";
 		};
-		4AB56E862C00BE550012F5B5 /* Flows */ = {
+		4AB56E862C00BE550012F5B5 /* BehaviourTests */ = {
 			isa = PBXGroup;
 			children = (
 				4AB56EA22C0104AB0012F5B5 /* SplashBehaviourTests.swift */,
 				4AB56E892C00BF000012F5B5 /* LoginBehaviourTests.swift */,
 				4AB56EA72C010D7E0012F5B5 /* UsedDaysBehaviourTests.swift */,
 				4AA0D96A2C01E32900104B29 /* OrganizationBehaviourTests.swift */,
+				4AF49D6D2C03A97C0037FF98 /* MyInfoBehaviourTests.swift */,
 			);
-			path = Flows;
+			path = BehaviourTests;
 			sourceTree = "<group>";
 		};
 		4AB56EA02C0103DA0012F5B5 /* NetworkModels */ = {
@@ -546,6 +573,7 @@
 				4AB56E672C00B98E0012F5B5 /* User.swift */,
 				4A8B83C32C023EDC00F417F9 /* Days.swift */,
 				4AF49D2B2C0329D10037FF98 /* Organization.swift */,
+				4AF49D642C038D780037FF98 /* EmptyResponse.swift */,
 			);
 			path = APIModels;
 			sourceTree = "<group>";
@@ -601,6 +629,23 @@
 				4AF49D512C0371180037FF98 /* CTAView.xib */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		4AF49D572C037A540037FF98 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				4AF49D5A2C037A880037FF98 /* MyInfoFormView.swift */,
+				4AF49D5C2C037A960037FF98 /* MyInfoFormView.xib */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		4AF49D682C039A210037FF98 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				4AF49D692C039A2B0037FF98 /* MyInfoMapper.swift */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 		9B9DAACCC5D2841AF3A14F0A /* Frameworks */ = {
@@ -712,6 +757,7 @@
 				4AA91E3A2C02A7BC00B6F2FD /* EmployeeTableViewCell.xib in Resources */,
 				4AA5A1672C00B67C003F6852 /* LaunchScreen.storyboard in Resources */,
 				4AA91E352C02A6AA00B6F2FD /* OrganizationListView.xib in Resources */,
+				4AF49D5D2C037A960037FF98 /* MyInfoFormView.xib in Resources */,
 				4AF49D362C0330CD0037FF98 /* InfoCardView.xib in Resources */,
 				4AF49D522C0371180037FF98 /* CTAView.xib in Resources */,
 				4A8B83F92C029DD000F417F9 /* EmployeeCardView.xib in Resources */,
@@ -815,15 +861,17 @@
 				4AA91E402C02A9C400B6F2FD /* View+Fill.swift in Sources */,
 				4AA91E482C02AB2E00B6F2FD /* TableView+Dequeue.swift in Sources */,
 				4AF49D2F2C03307B0037FF98 /* UsedDaysListView.swift in Sources */,
+				4AF49D632C038C1F0037FF98 /* MyInfoBehaviour.swift in Sources */,
 				4AA91E432C02AA7900B6F2FD /* TableView+RegisterCell.swift in Sources */,
 				4AF49D502C03710B0037FF98 /* CTAView.swift in Sources */,
 				4AA91E3D2C02A82400B6F2FD /* View+Instance.swift in Sources */,
 				4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */,
 				4AA0D96E2C01E44100104B29 /* OrganizationState.swift in Sources */,
+				4AF49D612C0383F80037FF98 /* КеyboardDetector.swift in Sources */,
 				4A8B83E42C02864C00F417F9 /* Images.swift in Sources */,
+				4AF49D5B2C037A880037FF98 /* MyInfoFormView.swift in Sources */,
 				4A8B83DD2C027F9E00F417F9 /* OrganizationViewController.swift in Sources */,
 				4AB56E972C00EEDE0012F5B5 /* LoginResolver.swift in Sources */,
-				4AF49D542C03722A0037FF98 /* ScallableView.swift in Sources */,
 				4AB56E8E2C00C0710012F5B5 /* LoginBehaviour.swift in Sources */,
 				4A8B83C22C023C9A00F417F9 /* AuthenticationService.swift in Sources */,
 				4AB56E682C00B98E0012F5B5 /* User.swift in Sources */,
@@ -837,18 +885,22 @@
 				4AF49D2C2C0329D10037FF98 /* Organization.swift in Sources */,
 				4AA0D9712C01E45F00104B29 /* OrganizationBehaviour.swift in Sources */,
 				4A8B83C42C023EDC00F417F9 /* Days.swift in Sources */,
+				4AF49D562C0379220037FF98 /* MyInfoState.swift in Sources */,
 				4AB56E902C00C0800012F5B5 /* LoginState.swift in Sources */,
+				4AF49D652C038D780037FF98 /* EmptyResponse.swift in Sources */,
 				4AA91E282C02A22200B6F2FD /* OrganizationAdapter.swift in Sources */,
 				4A8B83B12C01F80900F417F9 /* Parser.swift in Sources */,
 				4A8B83B72C01F8E300F417F9 /* AccessToken.swift in Sources */,
 				4AB56E762C00BA7F0012F5B5 /* ViewController+Instance.swift in Sources */,
 				4AB56EA52C010BF50012F5B5 /* SplashBehaviour.swift in Sources */,
 				4AA5A15B2C00B67B003F6852 /* AppDelegate.swift in Sources */,
+				4AF49D6A2C039A2B0037FF98 /* MyInfoMapper.swift in Sources */,
 				4AB56E6E2C00BA260012F5B5 /* SplashViewController.swift in Sources */,
 				4AF49D432C034C490037FF98 /* InputFieldView.swift in Sources */,
 				4A8B83D92C0275C400F417F9 /* UsedDaysViewController.swift in Sources */,
 				4AA0D9742C01E47E00104B29 /* OrganizationResolver.swift in Sources */,
 				4AB56E952C00EE2D0012F5B5 /* Closures.swift in Sources */,
+				4AF49D6C2C039CBF0037FF98 /* MyInfoResolver.swift in Sources */,
 				4AA91E462C02AADC00B6F2FD /* TableViewCell+Identifier.swift in Sources */,
 				4AA91E332C02A69F00B6F2FD /* OrganizationListView.swift in Sources */,
 				4AF49D4B2C036ADC0037FF98 /* LoginFormView.swift in Sources */,
@@ -867,10 +919,15 @@
 				4AA0D96B2C01E32900104B29 /* OrganizationBehaviourTests.swift in Sources */,
 				4AB56EA62C010C050012F5B5 /* SplashBehaviour.swift in Sources */,
 				4AF49D402C0343EE0037FF98 /* Strings.swift in Sources */,
+				4AF49D732C03AA640037FF98 /* EmptyResponse.swift in Sources */,
 				4AA0D9692C01E2A600104B29 /* UsedDaysState.swift in Sources */,
 				4AA0D9722C01E45F00104B29 /* OrganizationBehaviour.swift in Sources */,
+				4AF49D702C03A98F0037FF98 /* MyInfoState.swift in Sources */,
 				4AA91E2F2C02A46700B6F2FD /* EmployeeCardView.swift in Sources */,
+				4AF49D6F2C03A98D0037FF98 /* MyInfoResolver.swift in Sources */,
 				4A8B83CD2C026AA900F417F9 /* Paths.swift in Sources */,
+				4AF49D6E2C03A97C0037FF98 /* MyInfoBehaviourTests.swift in Sources */,
+				4AF49D712C03A9910037FF98 /* MyInfoBehaviour.swift in Sources */,
 				4A8B83CA2C026A7000F417F9 /* ValidatorTests.swift in Sources */,
 				4AA0D9752C01E47E00104B29 /* OrganizationResolver.swift in Sources */,
 				4AA0D9632C01E25800104B29 /* UsedDaysBehaviour.swift in Sources */,
@@ -885,6 +942,7 @@
 				4AB56E992C00FF4D0012F5B5 /* User.swift in Sources */,
 				4A8B83CE2C026ABB00F417F9 /* NetworkRequest.swift in Sources */,
 				4AA91E2D2C02A3AB00B6F2FD /* OrganizationAdapterTests.swift in Sources */,
+				4AF49D722C03A9960037FF98 /* MyInfoMapper.swift in Sources */,
 				4A8B83D02C026B1000F417F9 /* Parser.swift in Sources */,
 				4A8B83E82C02878500F417F9 /* Images.swift in Sources */,
 				4A8B83CC2C026A9800F417F9 /* AccessToken.swift in Sources */,

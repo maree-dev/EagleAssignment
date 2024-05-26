@@ -18,7 +18,7 @@ extension InputFieldStyle {
   static let rest = InputFieldStyle(borderColor: .gray, backgroundColor: .white, textColor: .black, borderWidth: 1)
   static let focused = InputFieldStyle(borderColor: .blue, backgroundColor: .white, textColor: .black, borderWidth: 1.5)
   static let error = InputFieldStyle(borderColor: .red, backgroundColor: .white, textColor: .black, borderWidth: 1)
-  static let disabled = InputFieldStyle(borderColor: .clear, backgroundColor: .lightGray, textColor: .gray, borderWidth: 0)
+  static let disabled = InputFieldStyle(borderColor: .systemGray6, backgroundColor: .systemGray6, textColor: .gray, borderWidth: 0)
 }
 
 final class InputFieldView: UIView {
@@ -33,6 +33,10 @@ final class InputFieldView: UIView {
   // MARK: - Properties
   var title: String? {
     didSet {labelTitle.text = title}
+  }
+  
+  var text: String? {
+    didSet {textField.text = text}
   }
   
   var placeholder: String? {
@@ -66,11 +70,12 @@ final class InputFieldView: UIView {
   }
   
   // MARK: - Init
-  class func instance(keyboardType: UIKeyboardType, disabled: Bool = false, secured: Bool = false) -> InputFieldView? {
+  class func instance(keyboardType: UIKeyboardType, title: String? = nil, disabled: Bool = false, secured: Bool = false) -> InputFieldView? {
     guard let view: InputFieldView = .instance() else {return nil}
     view.keboardType = keyboardType
     view.disabled = disabled
     view.secured = secured
+    view.title = title
     
     return view
   }
@@ -92,7 +97,7 @@ final class InputFieldView: UIView {
   
   private func handleError() {
     labelError.text = error
-    style = error == nil ? .rest : .error
+    style = error == nil ? (disabled ? .disabled : .rest) : .error
   }
 }
 
