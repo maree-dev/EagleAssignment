@@ -20,6 +20,18 @@ struct User: Decodable {
 }
 
 extension User {
+  var birthDate: Date? {
+    guard let dateString = dateOfBirth else {return nil}
+    return DateFormatterFactory.date(from: dateString, format: .utc)
+  }
+  
+  var employmentDate: Date? {
+    guard let dateString = hireDate else {return nil}
+    return DateFormatterFactory.date(from: dateString, format: .utc)
+  }
+}
+
+extension User {
   enum CodingKeys: String, CodingKey {
     case id, email, address, degree
     case firstName = "first_name"
