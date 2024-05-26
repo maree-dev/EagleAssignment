@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.6.4)
   - netfox (1.21.0)
+  - TinyConstraints (4.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 5.6.1)
   - netfox
+  - TinyConstraints
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - netfox
+    - TinyConstraints
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   netfox: 9d5cc727fe7576c4c7688a2504618a156b7d44b7
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: ebdb88173271182b365c1bd3e8d8bed67209295e
+PODFILE CHECKSUM: e45156b13114f9a6dae8c45cd13c204b92ba181d
 
 COCOAPODS: 1.15.2

@@ -14,9 +14,11 @@ protocol OrganizationBehaviour {
 
 final class OrganizationConcreteBehaviour {
   var onError: SingleParameterClosure<APIError>?
+  var onChange: VoidClosure?
   
   private let resolver: OrganizationResolver
   private weak var state: OrganizationState!
+  private var employees: [User] = []
   
   init(resolver: OrganizationResolver,
        onError: SingleParameterClosure<APIError>? = nil) {
@@ -41,9 +43,12 @@ extension OrganizationConcreteBehaviour: OrganizationBehaviour {
         
         if let users = users {
           // TODO: - Handle data
-          self?.state.models = ["placeholder"]
+          self?.employees = users
+          self?.state.models = OrganizationAdapter(users: users).convert()
         }
         else {self?.onError?(error ?? .generic)}
+        
+        self?.onChange?()
       }
     }
   }

@@ -8,10 +8,10 @@
 import Foundation
 
 final class OrganizationState {
-  var models: [String]
+  var models: [EmployeeCardDisplayable]
   var isLoading: Bool
   
-  init(models: [String] = [], isLoading: Bool = false) {
+  init(models: [EmployeeCardDisplayable] = [], isLoading: Bool = false) {
     self.models = models
     self.isLoading = isLoading
   }
