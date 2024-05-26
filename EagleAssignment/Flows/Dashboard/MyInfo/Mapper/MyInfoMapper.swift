@@ -15,10 +15,10 @@ final class MyInfoMapper {
   }
   
   func updateState(with user: User) {
+    state?.dateOfBirth = DateFormatterFactory.string(from: user.birthDate, format: .short)
+    state?.hireDate = DateFormatterFactory.string(from: user.employmentDate, format: .short)
     state?.firstName = user.firstName
     state?.lastName = user.lastName
-    state?.dateOfBirth = user.dateOfBirth
-    state?.hireDate = user.hireDate
     state?.email = user.email
     state?.address = user.address
     state?.degree = user.degree
