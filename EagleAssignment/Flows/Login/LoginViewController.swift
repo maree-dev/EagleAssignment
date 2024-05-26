@@ -17,6 +17,7 @@ final class LoginViewController: UIViewController {
   @IBOutlet weak var viewCTA: UIView!
   private let form: LoginFormView = .instance()!
   private let cta: CTAView = .instance(title: Strings.Login.ctaTitle)!
+  private let spinner: ActivityView = .instance()!
   
   // MARK: - Properties
   private let state = LoginState()
@@ -43,6 +44,7 @@ final class LoginViewController: UIViewController {
   
   private func setupView() {
     view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
+    spinner.container = view
     viewContent.fill(with: form)
     viewCTA.fill(with: cta)
   }
@@ -50,6 +52,7 @@ final class LoginViewController: UIViewController {
   private func render() {
     form.emailField.error = state.emailError
     form.passwordField.error = state.passwordError
+    spinner.isActive = state.isLoading
   }
   
   @objc private func dismissKeyboard() {

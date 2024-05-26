@@ -14,6 +14,7 @@ final class UsedDaysViewController: UIViewController {
   // MARK: - Outlets
   @IBOutlet weak var viewContent: UIView!
   private let list: UsedDaysListView = .instance()!
+  private let spinner: ActivityView = .instance()!
 
   // MARK: - Properties
   private let state = UsedDaysState()
@@ -22,13 +23,14 @@ final class UsedDaysViewController: UIViewController {
   // MARK: - ViewLifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    behaviour.setup(state)
-    bindActions()
     setupView()
+    bindActions()
+    behaviour.setup(state)
   }
   
   // MARK: - Private Methods
   private func setupView() {
+    spinner.container = view
     viewContent.fill(with: list)
   }
   
@@ -39,5 +41,6 @@ final class UsedDaysViewController: UIViewController {
   
   private func render() {
     list.fill(with: state.models)
+    spinner.isActive = state.isLoading
   }
 }

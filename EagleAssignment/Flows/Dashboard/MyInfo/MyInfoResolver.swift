@@ -18,6 +18,6 @@ final class MyInfoConcreteResolver: MyInfoResolver {
   }
   
   func update(params: UserParameters?, completion: @escaping DoubleParameterClosure<EmptyResponse?, APIError?>) {
-    // TODO: - Implement
+    // TODO: - Send network request
   }
 }

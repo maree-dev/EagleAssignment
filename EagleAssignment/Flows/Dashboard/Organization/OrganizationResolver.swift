@@ -13,8 +13,6 @@ protocol OrganizationResolver {
 
 final class OrganizationConcreteResolver: OrganizationResolver {
   func resolve(completion: @escaping DoubleParameterClosure<[User]?, APIError?>) {
-    UserService.organization { response, error in
-      completion(response?.items, error)
-    }
+    UserService.organization {completion($0?.items, $1)}
   }
 }
