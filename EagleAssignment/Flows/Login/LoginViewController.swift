@@ -9,7 +9,7 @@ import UIKit
 
 final class LoginViewController: UIViewController {
   // MARK: - Flows
-  var onSuccess: SingleParameterClosure<User>?
+  var onLogin: VoidClosure?
   var onError: SingleParameterClosure<APIError>?
   
   // MARK: - Outlets
@@ -33,7 +33,7 @@ final class LoginViewController: UIViewController {
   // MARK: - Private Methods
   private func bindActions() {
     behaviour.onError = {[weak self] in self?.onError?($0)}
-    behaviour.onLogin = {[weak self] in self?.onSuccess?($0)}
+    behaviour.onLogin = {[weak self] in self?.onLogin?()}
     behaviour.onChange = {[weak self] in self?.render()}
     
     form.emailField.onEdit = {[weak self] in self?.behaviour.set(email: $0)}

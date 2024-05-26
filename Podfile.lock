@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (5.6.4)
   - netfox (1.21.0)
+  - SwiftKeychainWrapper (4.0.1)
   - TinyConstraints (4.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 5.6.1)
   - netfox
+  - SwiftKeychainWrapper
   - TinyConstraints
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - netfox
+    - SwiftKeychainWrapper
     - TinyConstraints
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   netfox: 9d5cc727fe7576c4c7688a2504618a156b7d44b7
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: e45156b13114f9a6dae8c45cd13c204b92ba181d
+PODFILE CHECKSUM: ca11fc7cfa76134c614e29ad80649b583160e257
 
 COCOAPODS: 1.15.2

@@ -8,30 +8,29 @@
 import Foundation
 
 protocol SplashBehaviour {
-  func login()
+  func authenticate()
 }
 
 final class SplashConcreteBehaviour {
-  var onLogin: SingleParameterClosure<User>?
-  var onError: VoidClosure?
+  var onSuccess: VoidClosure?
+  var onFail: VoidClosure?
   
-  private let resolver: LoginResolver
-  
-  init(resolver: LoginResolver,
-       onLogin: SingleParameterClosure<User>? = nil,
-       onError: VoidClosure? = nil) {
+  init(onSuccess: VoidClosure? = nil,
+       onFail: VoidClosure? = nil) {
     
-    self.resolver = resolver
-    self.onLogin = onLogin
-    self.onError = onError
+    self.onSuccess = onSuccess
+    self.onFail = onFail
   }
 }
 
 extension SplashConcreteBehaviour: SplashBehaviour {
-  func login() {
-    resolver.resolve(parameters: nil) {[weak self] user, error in
-      if let user = user {self?.onLogin?(user)}
-      else {self?.onError?()}
+  func authenticate() {
+    guard let token = TokenStorage.token() else {
+      onFail?()
+      return
     }
+    
+    NetworkManager.shared.token = token
+    onSuccess?()
   }
 }
