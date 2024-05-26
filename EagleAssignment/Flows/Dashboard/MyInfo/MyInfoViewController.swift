@@ -32,6 +32,7 @@ final class MyInfoViewController: UIViewController {
   
   // MARK: - Private Methods
   private func setupView() {
+    view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
     spinner.container = view
     viewContent.fill(with: form)
   }
@@ -54,5 +55,9 @@ final class MyInfoViewController: UIViewController {
   private func render() {
     form.fill(with: state)
     spinner.isActive = state.isLoading
+  }
+  
+  @objc private func dismissKeyboard() {
+    view.endEditing(true)
   }
 }
