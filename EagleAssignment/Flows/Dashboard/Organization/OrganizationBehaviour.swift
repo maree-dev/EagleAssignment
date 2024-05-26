@@ -36,17 +36,18 @@ extension OrganizationConcreteBehaviour: OrganizationBehaviour {
   
   func load() {
     state.isLoading = true
+    onChange?()
     
     resolver.resolve {[weak self] (users, error) in
       DispatchQueue.main.async {
-        self?.state.isLoading = false
-        
         if let users = users {
           self?.employees = users
           self?.state.models = OrganizationAdapter(users: users).convert()
+        } else {
+          self?.onError?(error ?? .generic)
         }
-        else {self?.onError?(error ?? .generic)}
         
+        self?.state.isLoading = false
         self?.onChange?()
       }
     }

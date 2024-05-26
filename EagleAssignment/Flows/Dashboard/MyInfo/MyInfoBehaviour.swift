@@ -68,6 +68,7 @@ extension MyInfoConcreteBehaviour: MyInfoBehaviour {
   
   func load() {
     state.isLoading = true
+    onChange?()
     
     resolver.profile {[weak self] (user, error) in
       DispatchQueue.main.async {

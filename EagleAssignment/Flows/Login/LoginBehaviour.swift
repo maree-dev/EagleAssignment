@@ -61,6 +61,7 @@ extension LoginConcreteBehaviour: LoginBehaviour {
     
     let params = AuthParameters(email: state.email, password: state.password)
     state.isLoading = true
+    onChange?()
     
     resolver.resolve(parameters: params) {[weak self] (_, error) in
       self?.state.isLoading = false

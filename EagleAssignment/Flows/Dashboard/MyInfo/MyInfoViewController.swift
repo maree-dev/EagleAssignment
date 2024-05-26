@@ -15,6 +15,7 @@ final class MyInfoViewController: UIViewController {
   // MARK: - Outlets
   @IBOutlet weak var viewContent: UIView!
   private let form: MyInfoFormView = .instance()!
+  private let spinner: ActivityView = .instance()!
   
   // MARK: - Properties
   private let state = MyInfoState()
@@ -24,13 +25,14 @@ final class MyInfoViewController: UIViewController {
   // MARK: - ViewLifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    behaviour.setup(state)
-    bindActions()
     setupView()
+    bindActions()
+    behaviour.setup(state)
   }
   
   // MARK: - Private Methods
   private func setupView() {
+    spinner.container = view
     viewContent.fill(with: form)
   }
   
@@ -51,5 +53,6 @@ final class MyInfoViewController: UIViewController {
   
   private func render() {
     form.fill(with: state)
+    spinner.isActive = state.isLoading
   }
 }

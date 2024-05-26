@@ -36,17 +36,18 @@ extension UsedDaysConcreteBehaviour: UsedDaysBehaviour {
   
   func load() {
     state.isLoading = true
+    onChange?()
     
     resolver.resolve {[weak self] (days, error) in
       DispatchQueue.main.async {
-        self?.state.isLoading = false
-        
         if let days = days {
           self?.days = days
           self?.state.models = UsedDaysAdapter(days: days).convert()
+        } else {
+          self?.onError?(error ?? .generic)
         }
-        else {self?.onError?(error ?? .generic)}
         
+        self?.state.isLoading = false
         self?.onChange?()
       }
     }
