@@ -8,12 +8,11 @@
 import UIKit
 
 final class EmployeeTableViewCell: UITableViewCell {
-  @IBOutlet weak var viewContent: UIView!
   private let card: EmployeeCardView = .instance()!
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    viewContent.fill(with: card)
+    contentView.fill(with: card)
   }
   
   func fill(with model: EmployeeCardDisplayable) {
