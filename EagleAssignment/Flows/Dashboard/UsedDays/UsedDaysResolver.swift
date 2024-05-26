@@ -13,6 +13,8 @@ protocol UsedDaysResolver {
 
 final class UsedDaysConcreteResolver: UsedDaysResolver {
   func resolve(completion: @escaping DoubleParameterClosure<[Days]?, APIError?>) {
-    completion(nil, nil)
+    UserService.days { response, error in
+      completion(response?.items, error)
+    }
   }
 }

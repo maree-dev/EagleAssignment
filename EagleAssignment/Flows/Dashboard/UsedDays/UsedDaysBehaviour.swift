@@ -14,9 +14,11 @@ protocol UsedDaysBehaviour {
 
 final class UsedDaysConcreteBehaviour {
   var onError: SingleParameterClosure<APIError>?
+  var onChange: VoidClosure?
   
   private let resolver: UsedDaysResolver
   private weak var state: UsedDaysState!
+  private var days: [Days] = []
   
   init(resolver: UsedDaysResolver,
        onError: SingleParameterClosure<APIError>? = nil) {
@@ -40,11 +42,12 @@ extension UsedDaysConcreteBehaviour: UsedDaysBehaviour {
         self?.state.isLoading = false
         
         if let days = days {
-          // TODO: - Handle data
-          self?.state.models = ["placeholder"]
+          self?.days = days
+          self?.state.models = UsedDaysAdapter(days: days).convert()
         }
-        
         else {self?.onError?(error ?? .generic)}
+        
+        self?.onChange?()
       }
     }
   }

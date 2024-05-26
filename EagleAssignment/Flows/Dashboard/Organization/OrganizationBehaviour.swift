@@ -42,7 +42,6 @@ extension OrganizationConcreteBehaviour: OrganizationBehaviour {
         self?.state.isLoading = false
         
         if let users = users {
-          // TODO: - Handle data
           self?.employees = users
           self?.state.models = OrganizationAdapter(users: users).convert()
         }
