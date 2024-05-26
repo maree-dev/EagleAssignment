@@ -14,6 +14,15 @@ struct Strings {
     static let thirdItem = "My Info"
   }
   
+  struct Login {
+    static let heading = "HR Application"
+    static let emailPlaceholder = "Email"
+    static let passwordPlaceholder = "Password"
+    static let emailError = "Please enter a valid email address."
+    static let passwordError = "Please enter a valid password."
+    static let ctaTitle = "Login"
+  }
+  
   struct UsedDays {
     static let personalExcuse = "Personal excuse"
     static let businessAbsence = "Absence due to business"
