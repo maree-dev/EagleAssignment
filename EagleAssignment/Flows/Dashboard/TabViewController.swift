@@ -19,8 +19,14 @@ final class TabViewController: UITabBarController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    setupView()
     setupControllers()
     bindActions()
+  }
+  
+  private func setupView() {
+    tabBar.backgroundColor = .white
+    tabBar.barTintColor = .white
   }
   
   private func setupControllers() {

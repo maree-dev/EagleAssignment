@@ -21,6 +21,8 @@ final class AppConcreteCoordinator {
   init() {
     navigation = UINavigationController()
     window = UIWindow()
+    
+    navigation.setNavigationBarHidden(true, animated: false)
     window.rootViewController = navigation
     window.makeKeyAndVisible()
   }
