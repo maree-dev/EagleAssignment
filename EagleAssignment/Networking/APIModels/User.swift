@@ -15,6 +15,8 @@ struct User: Decodable {
   var address: String?
   var phone: String?
   var degree: String?
+  var dateOfBirth: String?
+  var hireDate: String?
 }
 
 extension User {
@@ -23,5 +25,7 @@ extension User {
     case firstName = "first_name"
     case lastName = "last_name"
     case phone = "phone_number"
+    case hireDate = "hire_date"
+    case dateOfBirth = "dob"
   }
 }

@@ -31,4 +31,16 @@ struct Strings {
     static let workFromHome = "Work from home"
     static let patronSaintDay = "Patron saint day"
   }
+  
+  struct MyInfo {
+    static let firstName = "First name"
+    static let lastName = "Last name"
+    static let dateOfBirth = "Date of birth"
+    static let hireDate = "Hire date"
+    static let email = "Email"
+    static let address = "Address"
+    static let college = "College"
+    static let contactInfo = "Contact info"
+    static let logout = "Logout"
+  }
 }

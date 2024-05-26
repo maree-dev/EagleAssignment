@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="MyInfoFormView" customModule="EagleAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="590"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqp-ux-PkY">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="590"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ymS-pp-bXu">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" placeholder="YES" id="rOg-Bx-btl"/>
+                            </constraints>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="16" bottom="16" trailing="16"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ymS-pp-bXu" firstAttribute="top" secondItem="mqp-ux-PkY" secondAttribute="top" id="2IG-Dm-aY2"/>
+                        <constraint firstAttribute="bottom" secondItem="ymS-pp-bXu" secondAttribute="bottom" id="Iiw-5S-XPH"/>
+                        <constraint firstAttribute="trailing" secondItem="ymS-pp-bXu" secondAttribute="trailing" id="K8F-zo-eku"/>
+                        <constraint firstItem="ymS-pp-bXu" firstAttribute="leading" secondItem="mqp-ux-PkY" secondAttribute="leading" id="bFp-b2-GR0"/>
+                        <constraint firstItem="ymS-pp-bXu" firstAttribute="width" secondItem="mqp-ux-PkY" secondAttribute="width" id="fhK-5e-EFF"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mqp-ux-PkY" secondAttribute="bottom" id="hwJ-Om-vHc"/>
+                <constraint firstItem="mqp-ux-PkY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="i9f-s6-eKL"/>
+                <constraint firstItem="mqp-ux-PkY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uxG-je-yCb"/>
+                <constraint firstAttribute="trailing" secondItem="mqp-ux-PkY" secondAttribute="trailing" id="von-ia-Tpz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="scrollView" destination="mqp-ux-PkY" id="yrd-G3-v2g"/>
+                <outlet property="stackView" destination="ymS-pp-bXu" id="WKb-JO-Eb9"/>
+            </connections>
+            <point key="canvasLocation" x="93.89312977099236" y="-103.52112676056339"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
