@@ -8,10 +8,10 @@
 import Foundation
 
 final class UsedDaysState {
-  var models: [String]
+  var models: [InfoCardDisplayable]
   var isLoading: Bool
   
-  init(models: [String] = [], isLoading: Bool = false) {
+  init(models: [InfoCardDisplayable] = [], isLoading: Bool = false) {
     self.models = models
     self.isLoading = isLoading
   }
