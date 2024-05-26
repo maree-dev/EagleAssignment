@@ -22,7 +22,7 @@ final class LoginViewController: UIViewController {
     behaviour.setup(state)
     bindActions()
     
-    behaviour.set(email: "test@test.net")
+    behaviour.set(email: "marko@test.net")
     behaviour.set(password: "testerko")
     behaviour.login()
   }

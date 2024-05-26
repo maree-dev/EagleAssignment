@@ -13,7 +13,8 @@ protocol OrganizationResolver {
 
 final class OrganizationConcreteResolver: OrganizationResolver {
   func resolve(completion: @escaping DoubleParameterClosure<[User]?, APIError?>) {
-    // TODO: - Replace with network request
-    completion(MockData.organization, nil)
+    UserService.organization { response, error in
+      completion(response?.items, error)
+    }
   }
 }
