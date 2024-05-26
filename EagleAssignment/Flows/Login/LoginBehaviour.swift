@@ -15,15 +15,15 @@ protocol LoginBehaviour {
 }
 
 final class LoginConcreteBehaviour {
-  var onLogin: SingleParameterClosure<User>?
   var onError: SingleParameterClosure<APIError>?
+  var onLogin: VoidClosure?
   var onChange: VoidClosure?
   
   private let resolver: LoginResolver
   private weak var state: LoginState!
   
   init(resolver: LoginResolver,
-       onLogin: SingleParameterClosure<User>? = nil,
+       onLogin: VoidClosure? = nil,
        onError: SingleParameterClosure<APIError>? = nil) {
     
     self.resolver = resolver
@@ -62,13 +62,12 @@ extension LoginConcreteBehaviour: LoginBehaviour {
     let params = AuthParameters(email: state.email, password: state.password)
     state.isLoading = true
     
-    resolver.resolve(parameters: params) {[weak self] (user, error) in
+    resolver.resolve(parameters: params) {[weak self] (_, error) in
       self?.state.isLoading = false
-      
-      if let user = user {self?.onLogin?(user)}
-      else {self?.onError?(error ?? .generic)}
-      
       self?.onChange?()
+      
+      if let error = error {self?.onError?(error)}
+      else {self?.onLogin?()}
     }
   }
 }

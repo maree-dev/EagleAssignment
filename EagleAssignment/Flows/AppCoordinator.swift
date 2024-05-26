@@ -9,7 +9,8 @@ import UIKit
 
 protocol AppCoordinator: Coordinator {
   func authenticate()
-  func dashboard(_ user: User)
+  func dashboard()
+  func logout()
 }
 
 final class AppConcreteCoordinator {
@@ -26,27 +27,27 @@ final class AppConcreteCoordinator {
 
 extension AppConcreteCoordinator: AppCoordinator {
   func start() {
-//    guard let controller: SplashViewController = .instance() else {return}
-//    controller.onFinish = {[weak self] in self?.dashboard($0)}
-//    controller.onError = {[weak self] in self?.authenticate()}
-    
-//    navigation.viewControllers = [controller]
-    
-//    dashboard(User())
-    
-    authenticate()
+    guard let controller: SplashViewController = .instance() else {return}
+    controller.onSuccess = {[weak self] in self?.dashboard()}
+    controller.onFail = {[weak self] in self?.authenticate()}
+    navigation.viewControllers = [controller]
   }
-  
-  func dismiss() {}
   
   func authenticate() {
     guard let controller: LoginViewController = .instance() else {return}
-    controller.onSuccess = {[weak self] in self?.dashboard($0)}
+    controller.onLogin = {[weak self] in self?.dashboard()}
     navigation.viewControllers = [controller]
   }
   
-  func dashboard(_ user: User) {
+  func dashboard() {
     guard let controller: TabViewController = .instance() else {return}
+    controller.onLogout = {[weak self] in self?.logout()}
     navigation.viewControllers = [controller]
+  }
+  
+  func logout() {
+    TokenStorage.removeToken()
+    NetworkManager.shared.token = nil
+    authenticate()
   }
 }

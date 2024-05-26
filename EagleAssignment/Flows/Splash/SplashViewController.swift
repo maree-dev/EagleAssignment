@@ -9,22 +9,22 @@ import UIKit
 
 final class SplashViewController: UIViewController {
   // MARK: - Flows
-  var onFinish: SingleParameterClosure<User>?
-  var onError: VoidClosure?
+  var onSuccess: VoidClosure?
+  var onFail: VoidClosure?
   
   // MARK: - Properties
-  private let behaviour = SplashConcreteBehaviour(resolver: AuthenticationResolver())
+  private let behaviour = SplashConcreteBehaviour()
   
   // MARK: - View LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
     bindActions()
-    behaviour.login()
+    behaviour.authenticate()
   }
   
   // MARK: - Private Methods
   private func bindActions() {
-    behaviour.onLogin = {[weak self] in self?.onFinish?($0)}
-    behaviour.onError = {[weak self] in self?.onError?()}
+    behaviour.onSuccess = {[weak self] in self?.onSuccess?()}
+    behaviour.onFail = {[weak self] in self?.onFail?()}
   }
 }

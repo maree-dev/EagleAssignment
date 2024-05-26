@@ -8,6 +8,9 @@
 import UIKit
 
 final class TabViewController: UITabBarController {
+  // MARK: - Flows
+  var onLogout: VoidClosure?
+  
   // MARK: - Properties
   let usedDays: UsedDaysViewController = .instance()!
   let organization: OrganizationViewController = .instance()!
@@ -16,6 +19,7 @@ final class TabViewController: UITabBarController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupControllers()
+    bindActions()
   }
   
   private func setupControllers() {
@@ -35,5 +39,9 @@ final class TabViewController: UITabBarController {
     thirdTab.title = Strings.Tab.thirdItem
     thirdTab.image = .person
     thirdTab.selectedImage = .personFill
+  }
+  
+  private func bindActions() {
+    myInfo.onLogout = {[weak self] in self?.onLogout?()}
   }
 }
