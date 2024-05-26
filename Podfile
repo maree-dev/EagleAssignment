@@ -8,6 +8,7 @@ target 'EagleAssignment' do
   # Pods for EagleAssignment
   pod 'Alamofire', '~> 5.6.1'
   pod 'netfox'
+  pod 'TinyConstraints'
 
   target 'EagleAssignmentTests' do
     inherit! :search_paths

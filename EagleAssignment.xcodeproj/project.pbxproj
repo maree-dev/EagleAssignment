@@ -42,6 +42,9 @@
 		4A8B83EC2C02884000F417F9 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83EA2C02884000F417F9 /* MyInfoViewController.swift */; };
 		4A8B83ED2C02884000F417F9 /* MyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B83EB2C02884000F417F9 /* MyInfoViewController.xib */; };
 		4A8B83F22C0293BE00F417F9 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83F12C0293BE00F417F9 /* MockData.swift */; };
+		4A8B83F72C029DB500F417F9 /* EmployeeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83F62C029DB500F417F9 /* EmployeeCardView.swift */; };
+		4A8B83F92C029DD000F417F9 /* EmployeeCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B83F82C029DD000F417F9 /* EmployeeCardView.xib */; };
+		4A8B83FA2C02A12300F417F9 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83F12C0293BE00F417F9 /* MockData.swift */; };
 		4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9632C01E25800104B29 /* UsedDaysBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */; };
 		4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */; };
@@ -58,6 +61,20 @@
 		4AA5A15B2C00B67B003F6852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA5A15A2C00B67B003F6852 /* AppDelegate.swift */; };
 		4AA5A1642C00B67C003F6852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA5A1632C00B67C003F6852 /* Assets.xcassets */; };
 		4AA5A1672C00B67C003F6852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA5A1652C00B67C003F6852 /* LaunchScreen.storyboard */; };
+		4AA91E282C02A22200B6F2FD /* OrganizationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91E272C02A22200B6F2FD /* OrganizationAdapter.swift */; };
+		4AA91E2D2C02A3AB00B6F2FD /* OrganizationAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91E2C2C02A3AB00B6F2FD /* OrganizationAdapterTests.swift */; };
+		4AA91E2E2C02A44F00B6F2FD /* OrganizationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91E272C02A22200B6F2FD /* OrganizationAdapter.swift */; };
+		4AA91E2F2C02A46700B6F2FD /* EmployeeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8B83F62C029DB500F417F9 /* EmployeeCardView.swift */; };
+		4AA91E302C02A46C00B6F2FD /* EmployeeCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B83F82C029DD000F417F9 /* EmployeeCardView.xib */; };
+		4AA91E332C02A69F00B6F2FD /* OrganizationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91E322C02A69F00B6F2FD /* OrganizationListView.swift */; };
+		4AA91E352C02A6AA00B6F2FD /* OrganizationListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA91E342C02A6AA00B6F2FD /* OrganizationListView.xib */; };
+		4AA91E392C02A7BC00B6F2FD /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91E372C02A7BC00B6F2FD /* EmployeeTableViewCell.swift */; };
+		4AA91E3A2C02A7BC00B6F2FD /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA91E382C02A7BC00B6F2FD /* EmployeeTableViewCell.xib */; };
+		4AA91E3D2C02A82400B6F2FD /* View+Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91E3C2C02A82400B6F2FD /* View+Instance.swift */; };
+		4AA91E402C02A9C400B6F2FD /* View+Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91E3F2C02A9C400B6F2FD /* View+Fill.swift */; };
+		4AA91E432C02AA7900B6F2FD /* TableView+RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91E422C02AA7900B6F2FD /* TableView+RegisterCell.swift */; };
+		4AA91E462C02AADC00B6F2FD /* TableViewCell+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91E452C02AADC00B6F2FD /* TableViewCell+Identifier.swift */; };
+		4AA91E482C02AB2E00B6F2FD /* TableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91E472C02AB2E00B6F2FD /* TableView+Dequeue.swift */; };
 		4AB56E622C00B9140012F5B5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E612C00B9140012F5B5 /* Coordinator.swift */; };
 		4AB56E652C00B9370012F5B5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E642C00B9370012F5B5 /* AppCoordinator.swift */; };
 		4AB56E682C00B98E0012F5B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56E672C00B98E0012F5B5 /* User.swift */; };
@@ -121,6 +138,8 @@
 		4A8B83EA2C02884000F417F9 /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
 		4A8B83EB2C02884000F417F9 /* MyInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoViewController.xib; sourceTree = "<group>"; };
 		4A8B83F12C0293BE00F417F9 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		4A8B83F62C029DB500F417F9 /* EmployeeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCardView.swift; sourceTree = "<group>"; };
+		4A8B83F82C029DD000F417F9 /* EmployeeCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeCardView.xib; sourceTree = "<group>"; };
 		4AA0D9612C01E25500104B29 /* UsedDaysBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysBehaviour.swift; sourceTree = "<group>"; };
 		4AA0D9642C01E27A00104B29 /* UsedDaysState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysState.swift; sourceTree = "<group>"; };
 		4AA0D9662C01E28D00104B29 /* UsedDaysResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDaysResolver.swift; sourceTree = "<group>"; };
@@ -133,6 +152,17 @@
 		4AA5A1632C00B67C003F6852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AA5A1662C00B67C003F6852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AA5A1682C00B67C003F6852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA91E272C02A22200B6F2FD /* OrganizationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationAdapter.swift; sourceTree = "<group>"; };
+		4AA91E2C2C02A3AB00B6F2FD /* OrganizationAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationAdapterTests.swift; sourceTree = "<group>"; };
+		4AA91E322C02A69F00B6F2FD /* OrganizationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationListView.swift; sourceTree = "<group>"; };
+		4AA91E342C02A6AA00B6F2FD /* OrganizationListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrganizationListView.xib; sourceTree = "<group>"; };
+		4AA91E372C02A7BC00B6F2FD /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		4AA91E382C02A7BC00B6F2FD /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
+		4AA91E3C2C02A82400B6F2FD /* View+Instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Instance.swift"; sourceTree = "<group>"; };
+		4AA91E3F2C02A9C400B6F2FD /* View+Fill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Fill.swift"; sourceTree = "<group>"; };
+		4AA91E422C02AA7900B6F2FD /* TableView+RegisterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+RegisterCell.swift"; sourceTree = "<group>"; };
+		4AA91E452C02AADC00B6F2FD /* TableViewCell+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewCell+Identifier.swift"; sourceTree = "<group>"; };
+		4AA91E472C02AB2E00B6F2FD /* TableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Dequeue.swift"; sourceTree = "<group>"; };
 		4AB56E612C00B9140012F5B5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4AB56E642C00B9370012F5B5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		4AB56E672C00B98E0012F5B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -192,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				4A8B83C92C026A7000F417F9 /* ValidatorTests.swift */,
+				4AA91E2C2C02A3AB00B6F2FD /* OrganizationAdapterTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -213,6 +244,31 @@
 			path = MyInfo;
 			sourceTree = "<group>";
 		};
+		4A8B83F32C029D6B00F417F9 /* Styleguide */ = {
+			isa = PBXGroup;
+			children = (
+				4A8B83F42C029D7B00F417F9 /* Cards */,
+			);
+			path = Styleguide;
+			sourceTree = "<group>";
+		};
+		4A8B83F42C029D7B00F417F9 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				4A8B83F52C029D9800F417F9 /* Employee */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		4A8B83F52C029D9800F417F9 /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				4A8B83F62C029DB500F417F9 /* EmployeeCardView.swift */,
+				4A8B83F82C029DD000F417F9 /* EmployeeCardView.xib */,
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
 		4AA0D9602C01E24700104B29 /* UsedDays */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +284,8 @@
 		4AA0D96C2C01E43100104B29 /* Organization */ = {
 			isa = PBXGroup;
 			children = (
+				4AA91E3E2C02A94B00B6F2FD /* Adapter */,
+				4AA91E312C02A68800B6F2FD /* List */,
 				4AA0D96D2C01E44100104B29 /* OrganizationState.swift */,
 				4AA0D9702C01E45F00104B29 /* OrganizationBehaviour.swift */,
 				4AA0D9732C01E47E00104B29 /* OrganizationResolver.swift */,
@@ -261,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				4AB56E632C00B9250012F5B5 /* Flows */,
+				4A8B83F32C029D6B00F417F9 /* Styleguide */,
 				4AB56E662C00B9790012F5B5 /* Networking */,
 				4AA5A16E2C00B69F003F6852 /* Resources */,
 				4AB56E602C00B9050012F5B5 /* Utils */,
@@ -282,10 +341,66 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		4AA91E312C02A68800B6F2FD /* List */ = {
+			isa = PBXGroup;
+			children = (
+				4AA91E362C02A79F00B6F2FD /* Cell */,
+				4AA91E322C02A69F00B6F2FD /* OrganizationListView.swift */,
+				4AA91E342C02A6AA00B6F2FD /* OrganizationListView.xib */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		4AA91E362C02A79F00B6F2FD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4AA91E372C02A7BC00B6F2FD /* EmployeeTableViewCell.swift */,
+				4AA91E382C02A7BC00B6F2FD /* EmployeeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4AA91E3B2C02A81700B6F2FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AA91E3C2C02A82400B6F2FD /* View+Instance.swift */,
+				4AA91E3F2C02A9C400B6F2FD /* View+Fill.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4AA91E3E2C02A94B00B6F2FD /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				4AA91E272C02A22200B6F2FD /* OrganizationAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		4AA91E412C02AA6C00B6F2FD /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				4AA91E422C02AA7900B6F2FD /* TableView+RegisterCell.swift */,
+				4AA91E472C02AB2E00B6F2FD /* TableView+Dequeue.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		4AA91E442C02AAC700B6F2FD /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4AA91E452C02AADC00B6F2FD /* TableViewCell+Identifier.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		4AB56E602C00B9050012F5B5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4AA91E3B2C02A81700B6F2FD /* View */,
 				4AB56E742C00BA6A0012F5B5 /* ViewController */,
+				4AA91E412C02AA6C00B6F2FD /* TableView */,
+				4AA91E442C02AAC700B6F2FD /* TableViewCell */,
 				4A8B83C62C02692600F417F9 /* ValidatorFactory.swift */,
 				4AB56E612C00B9140012F5B5 /* Coordinator.swift */,
 				4AB56E942C00EE2D0012F5B5 /* Closures.swift */,
@@ -507,7 +622,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB56E732C00BA300012F5B5 /* LoginViewController.xib in Resources */,
+				4AA91E3A2C02A7BC00B6F2FD /* EmployeeTableViewCell.xib in Resources */,
 				4AA5A1672C00B67C003F6852 /* LaunchScreen.storyboard in Resources */,
+				4AA91E352C02A6AA00B6F2FD /* OrganizationListView.xib in Resources */,
+				4A8B83F92C029DD000F417F9 /* EmployeeCardView.xib in Resources */,
 				4AB56E6F2C00BA260012F5B5 /* SplashViewController.xib in Resources */,
 				4A8B83ED2C02884000F417F9 /* MyInfoViewController.xib in Resources */,
 				4A8B83DE2C027F9E00F417F9 /* OrganizationViewController.xib in Resources */,
@@ -520,6 +638,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA91E302C02A46C00B6F2FD /* EmployeeCardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +718,10 @@
 				4A8B83B92C01FC1D00F417F9 /* NetworkRequest.swift in Sources */,
 				4A8B83AF2C01F28200F417F9 /* Paths.swift in Sources */,
 				4AB56E722C00BA300012F5B5 /* LoginViewController.swift in Sources */,
+				4AA91E402C02A9C400B6F2FD /* View+Fill.swift in Sources */,
+				4AA91E482C02AB2E00B6F2FD /* TableView+Dequeue.swift in Sources */,
+				4AA91E432C02AA7900B6F2FD /* TableView+RegisterCell.swift in Sources */,
+				4AA91E3D2C02A82400B6F2FD /* View+Instance.swift in Sources */,
 				4AA0D9652C01E27A00104B29 /* UsedDaysState.swift in Sources */,
 				4AA0D96E2C01E44100104B29 /* OrganizationState.swift in Sources */,
 				4A8B83E42C02864C00F417F9 /* Images.swift in Sources */,
@@ -608,6 +731,7 @@
 				4A8B83C22C023C9A00F417F9 /* AuthenticationService.swift in Sources */,
 				4AB56E682C00B98E0012F5B5 /* User.swift in Sources */,
 				4A8B83E22C0285D200F417F9 /* Strings.swift in Sources */,
+				4AA91E392C02A7BC00B6F2FD /* EmployeeTableViewCell.swift in Sources */,
 				4A8B83E02C02838300F417F9 /* TabViewController.swift in Sources */,
 				4A8B83B32C01F83700F417F9 /* APIResponse.swift in Sources */,
 				4AA0D9622C01E25500104B29 /* UsedDaysBehaviour.swift in Sources */,
@@ -616,6 +740,7 @@
 				4AA0D9712C01E45F00104B29 /* OrganizationBehaviour.swift in Sources */,
 				4A8B83C42C023EDC00F417F9 /* Days.swift in Sources */,
 				4AB56E902C00C0800012F5B5 /* LoginState.swift in Sources */,
+				4AA91E282C02A22200B6F2FD /* OrganizationAdapter.swift in Sources */,
 				4A8B83B12C01F80900F417F9 /* Parser.swift in Sources */,
 				4A8B83B72C01F8E300F417F9 /* AccessToken.swift in Sources */,
 				4AB56E762C00BA7F0012F5B5 /* ViewController+Instance.swift in Sources */,
@@ -626,8 +751,11 @@
 				4A8B83B52C01F88C00F417F9 /* EmptResponse.swift in Sources */,
 				4AA0D9742C01E47E00104B29 /* OrganizationResolver.swift in Sources */,
 				4AB56E952C00EE2D0012F5B5 /* Closures.swift in Sources */,
+				4AA91E462C02AADC00B6F2FD /* TableViewCell+Identifier.swift in Sources */,
+				4AA91E332C02A69F00B6F2FD /* OrganizationListView.swift in Sources */,
 				4AA0D9672C01E28D00104B29 /* UsedDaysResolver.swift in Sources */,
 				4AB56E9C2C01011E0012F5B5 /* APIError.swift in Sources */,
+				4A8B83F72C029DB500F417F9 /* EmployeeCardView.swift in Sources */,
 				4A8B83F22C0293BE00F417F9 /* MockData.swift in Sources */,
 				4A8B83EC2C02884000F417F9 /* MyInfoViewController.swift in Sources */,
 				4A8B83C72C02692600F417F9 /* ValidatorFactory.swift in Sources */,
@@ -642,6 +770,7 @@
 				4AB56EA62C010C050012F5B5 /* SplashBehaviour.swift in Sources */,
 				4AA0D9692C01E2A600104B29 /* UsedDaysState.swift in Sources */,
 				4AA0D9722C01E45F00104B29 /* OrganizationBehaviour.swift in Sources */,
+				4AA91E2F2C02A46700B6F2FD /* EmployeeCardView.swift in Sources */,
 				4A8B83CD2C026AA900F417F9 /* Paths.swift in Sources */,
 				4A8B83CA2C026A7000F417F9 /* ValidatorTests.swift in Sources */,
 				4AA0D9752C01E47E00104B29 /* OrganizationResolver.swift in Sources */,
@@ -651,17 +780,20 @@
 				4AA0D9682C01E2A000104B29 /* UsedDaysResolver.swift in Sources */,
 				4AB56E912C00C0B00012F5B5 /* LoginState.swift in Sources */,
 				4A8B83CF2C026ABE00F417F9 /* NetworkManager.swift in Sources */,
+				4A8B83FA2C02A12300F417F9 /* MockData.swift in Sources */,
 				4A8B83D42C026C8300F417F9 /* ValidatorFactory.swift in Sources */,
 				4AA0D96F2C01E44100104B29 /* OrganizationState.swift in Sources */,
 				4AB56E9F2C0102A10012F5B5 /* TestConstants.swift in Sources */,
 				4AB56E992C00FF4D0012F5B5 /* User.swift in Sources */,
 				4A8B83CE2C026ABB00F417F9 /* NetworkRequest.swift in Sources */,
+				4AA91E2D2C02A3AB00B6F2FD /* OrganizationAdapterTests.swift in Sources */,
 				4A8B83D02C026B1000F417F9 /* Parser.swift in Sources */,
 				4A8B83E82C02878500F417F9 /* Images.swift in Sources */,
 				4A8B83CC2C026A9800F417F9 /* AccessToken.swift in Sources */,
 				4AB56E982C00EEFA0012F5B5 /* LoginResolver.swift in Sources */,
 				4A8B83D12C026B2700F417F9 /* Days.swift in Sources */,
 				4AB56EA82C010D7E0012F5B5 /* UsedDaysBehaviourTests.swift in Sources */,
+				4AA91E2E2C02A44F00B6F2FD /* OrganizationAdapter.swift in Sources */,
 				4A8B83D32C026B2E00F417F9 /* EmptResponse.swift in Sources */,
 				4AB56E9A2C00FFA10012F5B5 /* Closures.swift in Sources */,
 				4A8B83E72C02878100F417F9 /* ImageTests.swift in Sources */,
