@@ -47,8 +47,8 @@ final class InputFieldView: UIView {
     didSet {handleError()}
   }
   
-  var keboardType: UIKeyboardType = .default {
-    didSet {textField.keyboardType = keboardType}
+  var keyboardType: UIKeyboardType = .default {
+    didSet {handleKeyboardType()}
   }
   
   var secured: Bool = false {
@@ -72,7 +72,7 @@ final class InputFieldView: UIView {
   // MARK: - Init
   class func instance(keyboardType: UIKeyboardType, title: String? = nil, disabled: Bool = false, secured: Bool = false) -> InputFieldView? {
     guard let view: InputFieldView = .instance() else {return nil}
-    view.keboardType = keyboardType
+    view.keyboardType = keyboardType
     view.disabled = disabled
     view.secured = secured
     view.title = title
@@ -99,6 +99,30 @@ final class InputFieldView: UIView {
     labelError.text = error
     style = error == nil ? (disabled ? .disabled : .rest) : .error
   }
+  
+  private func handleKeyboardType() {
+    if keyboardType == .phonePad {
+      addDoneButton()
+    } else {
+      textField.inputAccessoryView = nil
+    }
+    textField.keyboardType = keyboardType
+  }
+  
+  private func addDoneButton() {
+    let toolbar = UIToolbar()
+    toolbar.bounds.size = CGSize(width: bounds.width, height: Constants.toolbarHeight)
+    
+    let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+    let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonTapped))
+    toolbar.setItems([flexSpace, doneButton], animated: false)
+    
+    textField.inputAccessoryView = toolbar
+  }
+  
+  @objc private func doneButtonTapped() {
+    textField.resignFirstResponder()
+  }
 }
 
 extension InputFieldView: UITextFieldDelegate {
@@ -120,7 +144,7 @@ extension InputFieldView: UITextFieldDelegate {
   }
   
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    textField.endEditing(true)
+    textField.resignFirstResponder()
     return true
   }
 }
@@ -128,6 +152,7 @@ extension InputFieldView: UITextFieldDelegate {
 extension InputFieldView {
   private struct Constants {
     static let cornerRadius: CGFloat = 4
+    static let toolbarHeight: CGFloat = 46
     static let animationDuration: CGFloat = 0.3
   }
 }
