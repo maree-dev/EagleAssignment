@@ -10,7 +10,7 @@ import XCTest
 final class OrganizationAdapterTests: XCTestCase {
   
   func testFull() {
-    let user = User(firstName: "Aleksandar", lastName: "Vučić", address: "Trg Nikole Pašića 13", phone: "011 3026100")
+    let user = User(firstName: "Aleksandar", lastName: "vučić", address: "Trg Nikole Pašića 13", phone: "011 3026100")
     let result = OrganizationAdapter(users: [user]).convert()
     
     XCTAssertFalse(result.isEmpty)
@@ -20,7 +20,7 @@ final class OrganizationAdapterTests: XCTestCase {
   }
   
   func testPartial() {
-    let user = User(firstName: "Aleksandar", lastName: "Vučić", address: "")
+    let user = User(firstName: "aleksandar", lastName: "Vučić", address: "")
     let result = OrganizationAdapter(users: [user]).convert()
     
     XCTAssertFalse(result.isEmpty)

@@ -22,7 +22,7 @@ final class OrganizationAdapter {
       let address = user.address?.isEmpty == false ? user.address! : "-"
       let phone = user.phone?.isEmpty == false ? user.phone! : "-"
       
-      models.append(BaseEmployeeCardDisplayable(employeeCardName: name, employeeCardAddress: address, employeeCardPhone: phone))
+      models.append(BaseEmployeeCardDisplayable(employeeCardName: name.capitalized, employeeCardAddress: address, employeeCardPhone: phone))
     }
     
     return models
