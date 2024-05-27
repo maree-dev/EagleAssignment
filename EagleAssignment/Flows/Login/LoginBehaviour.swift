@@ -64,11 +64,13 @@ extension LoginConcreteBehaviour: LoginBehaviour {
     onChange?()
     
     resolver.resolve(parameters: params) {[weak self] (_, error) in
-      self?.state.isLoading = false
-      self?.onChange?()
-      
-      if let error = error {self?.onError?(error)}
-      else {self?.onLogin?()}
+      DispatchQueue.main.async {
+        self?.state.isLoading = false
+        self?.onChange?()
+        
+        if let error = error {self?.onError?(error)}
+        else {self?.onLogin?()}
+      }
     }
   }
 }

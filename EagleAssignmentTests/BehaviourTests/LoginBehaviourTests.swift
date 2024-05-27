@@ -19,19 +19,21 @@ final class LoginBehaviourTests: XCTestCase {
   }
   
   func testInitial() {
-    XCTAssertEqual(state.email, "")
-    XCTAssertEqual(state.password, "")
+    XCTAssertTrue(state.email.isEmpty)
+    XCTAssertTrue(state.password.isEmpty)
     XCTAssertFalse(state.isLoading)
   }
   
   func testEmail() {
     behaviour.set(email: "mileJNA@gmail.com")
     XCTAssertEqual(state.email, "mileJNA@gmail.com")
+    XCTAssertTrue(state.password.isEmpty)
   }
   
   func testPassword() {
     behaviour.set(password: "mileeeee")
     XCTAssertEqual(state.password, "mileeeee")
+    XCTAssertTrue(state.email.isEmpty)
   }
   
   func testEmptyLogin() {
@@ -51,9 +53,9 @@ final class LoginBehaviourTests: XCTestCase {
     behaviour.setup(state)
     behaviour.set(email: "mileJNA@gmail.com")
     behaviour.set(password: "mileeeee")
-    
     behaviour.login()
     
+    XCTAssertTrue(state.isLoading)
     XCTAssertEqual(resolver.callCount, 1)
   }
   
@@ -68,9 +70,9 @@ final class LoginBehaviourTests: XCTestCase {
     behaviour.setup(state)
     behaviour.set(email: "mileJNA@gmail.com")
     behaviour.set(password: "mileeeee")
-    
     behaviour.login()
     
+    XCTAssertTrue(state.isLoading)
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+TestConstants.AsyncAfter) {
       XCTAssertFalse(self.state.isLoading)
     }
@@ -79,19 +81,17 @@ final class LoginBehaviourTests: XCTestCase {
   }
   
   func testLoginSuccess() {
-    let expectation = XCTestExpectation(description: "Should return user")
-    let apiUser = User(id: 1)
-    let resolver = FakeLoginResolver(user: apiUser)
-    behaviour = LoginConcreteBehaviour(resolver: resolver, onLogin: { user in
-      XCTAssertEqual(apiUser.id, user.id)
+    let expectation = XCTestExpectation(description: "Should retrieve token")
+    let resolver = FakeLoginResolver(token: AccessToken(token: "token"))
+    behaviour = LoginConcreteBehaviour(resolver: resolver, onLogin: {
       expectation.fulfill()
     })
     behaviour.setup(state)
     behaviour.set(email: "mileJNA@gmail.com")
     behaviour.set(password: "mileeeee")
-    
     behaviour.login()
     
+    XCTAssertTrue(state.isLoading)
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+TestConstants.AsyncAfter) {
       XCTAssertFalse(self.state.isLoading)
     }
@@ -101,23 +101,23 @@ final class LoginBehaviourTests: XCTestCase {
 }
 
 final class FakeLoginResolver: LoginResolver {
-  let user: User?
+  let token: AccessToken?
   let error: APIError?
   
-  init(user: User? = nil, error: APIError? = nil) {
-    self.user = user
+  init(token: AccessToken? = nil, error: APIError? = nil) {
+    self.token = token
     self.error = error
   }
   
-  func resolve(parameters: AuthParameters?, completion: @escaping DoubleParameterClosure<User?, APIError?>) {
-    completion(user, error)
+  func resolve(parameters: AuthParameters?, completion: @escaping DoubleParameterClosure<AccessToken?, APIError?>) {
+    completion(token, error)
   }
 }
 
 final class FakeCounterLoginResolver: LoginResolver {
   var callCount = 0
   
-  func resolve(parameters: AuthParameters?, completion: @escaping DoubleParameterClosure<User?, APIError?>) {
+  func resolve(parameters: AuthParameters?, completion: @escaping DoubleParameterClosure<AccessToken?, APIError?>) {
     callCount += 1
     completion(nil, nil)
   }
