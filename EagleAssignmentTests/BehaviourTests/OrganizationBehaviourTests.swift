@@ -14,7 +14,6 @@ final class OrganizationBehaviourTests: XCTestCase {
   override func setUp() {
     state = OrganizationState()
     behaviour = OrganizationConcreteBehaviour(resolver: FakeOrganizationResolver())
-    behaviour.setup(state)
   }
   
   func testInitial() {
@@ -28,6 +27,7 @@ final class OrganizationBehaviourTests: XCTestCase {
   }
   
   func testLoadError() {
+    /// given
     let expectation = XCTestExpectation(description: "Should return error")
     let apiError = APIError.generic
     behaviour = OrganizationConcreteBehaviour(resolver: FakeOrganizationResolver(error: apiError), onError: { error in
@@ -36,8 +36,11 @@ final class OrganizationBehaviourTests: XCTestCase {
     })
     behaviour.setup(state)
     
+    /// when
     behaviour.load()
     
+    /// then
+    XCTAssertTrue(state.isLoading)
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+TestConstants.AsyncAfter) {
       XCTAssertFalse(self.state.isLoading)
     }
@@ -46,13 +49,17 @@ final class OrganizationBehaviourTests: XCTestCase {
   }
   
   func testLoadSuccess() {
+    /// given
     let expectation = XCTestExpectation(description: "Should return items")
     let items = [User(id: 1), User(id: 2), User(id: 3)]
     behaviour = OrganizationConcreteBehaviour(resolver: FakeOrganizationResolver(items: items))
     behaviour.setup(state)
     
+    /// when
     behaviour.load()
     
+    /// then
+    XCTAssertTrue(state.isLoading)
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+TestConstants.AsyncAfter) {
       XCTAssertFalse(self.state.isLoading)
       XCTAssertFalse(self.state.models.isEmpty)

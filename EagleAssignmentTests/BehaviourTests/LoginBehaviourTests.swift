@@ -25,41 +25,55 @@ final class LoginBehaviourTests: XCTestCase {
   }
   
   func testEmail() {
+    /// when
     behaviour.set(email: "mileJNA@gmail.com")
+    
+    /// then
     XCTAssertEqual(state.email, "mileJNA@gmail.com")
     XCTAssertTrue(state.password.isEmpty)
   }
   
   func testPassword() {
+    /// when
     behaviour.set(password: "mileeeee")
+    
+    /// then
     XCTAssertEqual(state.password, "mileeeee")
     XCTAssertTrue(state.email.isEmpty)
   }
   
   func testEmptyLogin() {
+    /// given
     let resolver = FakeCounterLoginResolver()
     behaviour = LoginConcreteBehaviour(resolver: resolver)
     behaviour.setup(state)
     
+    /// when
     behaviour.login()
 
+    /// then
     XCTAssertFalse(state.isLoading)
     XCTAssertEqual(resolver.callCount, 0)
   }
   
   func testLogin() {
+    /// given
     let resolver = FakeCounterLoginResolver()
     behaviour = LoginConcreteBehaviour(resolver: resolver)
     behaviour.setup(state)
     behaviour.set(email: "mileJNA@gmail.com")
     behaviour.set(password: "mileeeee")
+    
+    /// when
     behaviour.login()
     
+    /// then
     XCTAssertTrue(state.isLoading)
     XCTAssertEqual(resolver.callCount, 1)
   }
   
   func testLoginError() {
+    /// given
     let expectation = XCTestExpectation(description: "Should return error")
     let apiError = APIError.generic
     let resolver = FakeLoginResolver(error: apiError)
@@ -70,8 +84,11 @@ final class LoginBehaviourTests: XCTestCase {
     behaviour.setup(state)
     behaviour.set(email: "mileJNA@gmail.com")
     behaviour.set(password: "mileeeee")
+    
+    /// when
     behaviour.login()
     
+    /// then
     XCTAssertTrue(state.isLoading)
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+TestConstants.AsyncAfter) {
       XCTAssertFalse(self.state.isLoading)
@@ -81,6 +98,7 @@ final class LoginBehaviourTests: XCTestCase {
   }
   
   func testLoginSuccess() {
+    /// given
     let expectation = XCTestExpectation(description: "Should retrieve token")
     let resolver = FakeLoginResolver(token: AccessToken(token: "token"))
     behaviour = LoginConcreteBehaviour(resolver: resolver, onLogin: {
@@ -89,8 +107,11 @@ final class LoginBehaviourTests: XCTestCase {
     behaviour.setup(state)
     behaviour.set(email: "mileJNA@gmail.com")
     behaviour.set(password: "mileeeee")
+    
+    /// when
     behaviour.login()
     
+    /// then
     XCTAssertTrue(state.isLoading)
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+TestConstants.AsyncAfter) {
       XCTAssertFalse(self.state.isLoading)

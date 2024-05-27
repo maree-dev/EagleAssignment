@@ -14,7 +14,6 @@ final class UsedDaysBehaviourTests: XCTestCase {
   override func setUp() {
     state = UsedDaysState()
     behaviour = UsedDaysConcreteBehaviour(resolver: FakeUsedDaysResolver())
-    behaviour.setup(state)
   }
   
   func testInitial() {
@@ -28,6 +27,7 @@ final class UsedDaysBehaviourTests: XCTestCase {
   }
   
   func testLoadError() {
+    /// given
     let expectation = XCTestExpectation(description: "Should return error")
     let apiError = APIError.generic
     behaviour = UsedDaysConcreteBehaviour(resolver: FakeUsedDaysResolver(error: apiError), onError: { error in
@@ -36,8 +36,11 @@ final class UsedDaysBehaviourTests: XCTestCase {
     })
     behaviour.setup(state)
     
+    /// when
     behaviour.load()
     
+    /// then
+    XCTAssertTrue(state.isLoading)
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+TestConstants.AsyncAfter) {
       XCTAssertFalse(self.state.isLoading)
     }
@@ -46,13 +49,16 @@ final class UsedDaysBehaviourTests: XCTestCase {
   }
   
   func testLoadSuccess() {
+    /// given
     let expectation = XCTestExpectation(description: "Should return items")
     let items = [Days()]
     behaviour = UsedDaysConcreteBehaviour(resolver: FakeUsedDaysResolver(items: items))
     behaviour.setup(state)
     
+    /// when
     behaviour.load()
     
+    /// then
     XCTAssertTrue(state.isLoading)
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+TestConstants.AsyncAfter) {
       XCTAssertFalse(self.state.isLoading)
